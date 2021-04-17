@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.box {
+				width: 400px;
+				height: 721px;
+				margin: 0 auto;
+				background: url(./image/start.png) center / 100%;
+			}
+
+			.but {
+				width: 100px;
+				height: 50px;
+				background: #C3C8C9;
+				text-align: center;
+				line-height: 50px;
+				margin: -200px auto;
+			}
+
+			.one {
+				position: relative;
+				width: 400px;
+				height: 721px;
+				margin: 0 auto;
+			}
+
+			.self {
+				width: 48px;
+				height: 57px;
+				background: url(image/fj.gif) no-repeat center/100%;
+				position: absolute;
+				bottom: 10px;
+				left: 50%;
+				margin-left: -24px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="one">
+			<div class="box"></div>
+			<div class="but">点击开始</div>
+			<div class="self"></div>
+		</div>
+
+	</body>
+	<script>
+		// 获取点击事件
+		var but = document.querySelector('.but')
+		var one = document.querySelector('.one')
+		var box = document.querySelector('.box')
+		var self = document.querySelector('.self')
+		console.log(but)
+		// 设置点击事件，跟换背景并且将but移除
+		but.onclick = function() {
+			box.style.background = 'url(image/bg.png)'
+			one.removeChild(but)
+			setInterval(function() {
+				// 在one中添加元素
+				var pla = document.createElement('div');
+				pla.class = 'pla';
+				// 将div添加到页面上
+				one.appendChild(pla)
+				// 设置div样式
+				pla.style.width = '48px'
+				pla.style.height = '35px'
+				pla.style.background = 'url(image/dj1.png) no-repeat center /100%'
+				pla.style.position = 'absolute'
+				pla.style.top = '-48px'
+				var biu = document.createElement('div')
+				// 判断飞机撞击条件
+				// 设置div随机出现的位置
+				var res = Math.floor(Math.random() * (box.offsetWidth - pla.offsetWidth))
+				pla.style.left = res + 'px';
+				// 设置下滑的变量
+				var num = 0;
+				// 设置定时器让div循环下落
+				var time = setInterval(function() {
+					// clearInterval(time)
+					// 判断下滑条件
+					if (num < one.offsetHeight - pla.offsetHeight) {
+						num++;
+						if (Math.abs(self.offsetTop - pla.offsetTop) <= self.offsetHeight / 2 + pla.offsetHeight / 2 && Math.abs(
+								self.offsetLeft - pla.offsetLeft) <= self.offsetWidth / 2 + pla.offsetWidth / 2) {
+							self.style.background = 'url(image/zjfj.gif) no-repeat center /100%'
+							setTimeout(function() {
+								// 当发生撞击时，self被移除
+								one.removeChild(self)
+							}, 1000)
+							// 设置死亡后提示
+							var att = document.createElement('div')
+							one.appendChild(att)
+							att.style.width = '200px'
+							att.style.height = '50px'
+							att.style.position = 'absolute'
+							att.style.top = '50%'
+							att.style.marginTop = '-25px'
+							att.style.left = '50%'
+							att.style.marginLeft = '-100px'
+							att.style.textAlign = 'center'
+							att.style.lineHeight = '50px'
+							att.innerText = '死求了，给五块钱再来一遍'
+							clearInterval(time)
+
+						}
+						// clearInterval(time)
+						// clearInterval(time);	
+					} else {
+						// 当下落到一定高度时，移除pla
+						one.removeChild(pla);
+						/* var num = 0;
+						num++;
+						console.log(num) */
+						// 当下落条件满足时清除定时器
+						clearInterval(time);
+					}
+					// 设置下落
+					pla.style.top = num + 'px'
+				}, 1)
+			}, 500)
+			// 设置变量
+			var sex = self.offsetLeft;
+			var sey = self.offsetTop;
+			var time;
+			// console.log(sex)
+			// 设置键盘事件，使用方向键控制飞机方向
+			window.onkeydown = function(e) {
+				var ev = e || window.event;
+				clearInterval(time)
+				// 左37 右39 上38 下40
+				// console.log(ev.keyCode)
+				switch (ev.keyCode) {
+					case 37: //左
+						time = setInterval(function() {
+							sex--;
+							if (sex <= 0) {
+								sex = 0;
+							}
+							// console.log(sex)
+							self.style.left = sex + 24 + 'px';
+						}, 1)
+						break;
+					case 39: //右
+						time = setInterval(function() {
+							sex++;
+							if (sex >= (one.offsetWidth - self.offsetWidth)) {
+								sex = one.offsetWidth - self.offsetWidth;
+							}
+							self.style.left = sex + 24 + 'px';
+						}, 1)
+						break;
+					case 38: //上
+						time = setInterval(function() {
+							sey--;
+							if (sey <= 0) {
+								sey = 0;
+							}
+							self.style.top = sey + 'px';
+						}, 1)
+						break;
+					case 40: //下
+						time = setInterval(function() {
+							sey++;
+							if (sey >= (one.offsetHeight - self.offsetHeight)) {
+								sey = one.offsetHeight - self.offsetHeight;
+							}
+							self.style.top = sey + 'px';
+						}, 1)
+						break;
+				}
+				// 设置子弹射出
+			}
+			console.log(self.offsetLeft)
+			// 先添加子弹
+			var timebiu = setInterval(function() {
+				// 添加子弹
+				var biu = document.createElement('div')
+				one.appendChild(biu)
+				biu.style.width = '4px'
+				biu.style.height = '8px'
+				biu.style.background = 'url(image/zd.png) no-repeat center /100%'
+				biu.style.position = 'absolute'
+				biu.style.top = self.offsetTop - 8 + 'px'
+				biu.style.left = self.offsetLeft + 22 + 'px'
+				// 设置出现位置
+				// biu.offsetLeft = self.offsetLeft+25+'px';
+				// biu.offsetTop= self.offsetTop;
+				var pla = document.querySelector('.pla')
+				// console.log(pla)
+				var time = setInterval(function() {
+					// 设置子弹射出
+					if (biu.offsetTop >= 0) {
+						biu.style.top = parseInt(biu.style.top) - 1 + 'px'
+
+					} else {
+						one.removeChild(biu);
+						clearInterval(time);
+					}
+				}, 1)
+				// clearInterval(timebiu)
+			}, 500)
+			// 设置键盘弹起事件
+			window.onkeyup = function() {
+				clearInterval(time)
+			}
+		}
+	</script>
+</html>
+<!-- 			// 设置变量
+			var sex = self.offsetLeft;
+			var sey = self.offsetTop;
+			var time;
+			// console.log(sex)
+			// 设置键盘事件，使用方向键控制飞机方向
+			window.onkeydown = function(e){
+				var ev = e||window.event;
+					clearInterval(time)
+				// 左37 右39 上38 下40
+				// console.log(ev.keyCode)
+				switch(ev.keyCode){
+					case 37://左
+						time = setInterval(function(){
+							sex--;
+							if(sex <= 0){
+								sex = 0;
+							}
+							// console.log(sex)
+							self.style.left = sex+24+'px';
+						},1)
+					break;
+					case 39://右
+						time = setInterval(function(){
+							sex++;
+							if(sex >= (one.offsetWidth-self.offsetWidth)){
+								sex = one.offsetWidth-self.offsetWidth;
+							}
+							self.style.left = sex+24+'px';
+						},1)
+					break;
+					case 38://上
+						time = setInterval(function(){
+							sey--;
+							if(sey <= 0){
+								sey = 0;
+							}
+							self.style.top = sey+'px';
+						},1)
+					break;
+					case 40://下
+						time = setInterval(function(){
+							sey++;
+							if(sey >= (one.offsetHeight-self.offsetHeight)){
+								sey = one.offsetHeight-self.offsetHeight;
+							}
+							self.style.top = sey+'px';
+						},1)
+					break;
+				}
+							// 设置子弹射出
+			}
+			console.log(self.offsetLeft)
+			// 先添加子弹
+			var timebiu = setInterval(function(){
+				// 添加子弹
+				var biu = document.createElement('div')
+				one.appendChild(biu)
+				biu.style.width = '48px'
+				biu.style.height = '48px'
+				biu.style.background = 'blue'
+				biu.style.position = 'absolute'
+				biu.style.top = self.offsetTop+'px'
+				biu.style.left = self.offsetLeft+'px'
+				// 设置出现位置
+				// biu.offsetLeft = self.offsetLeft+25+'px';
+				// biu.offsetTop= self.offsetTop;
+				var time = setInterval(function(){
+					// 设置子弹射出
+					if(biu.offsetTop>=0){
+							biu.style.top=parseInt(biu.style.top)-1+'px'
+						
+						}else{
+							one.removeChild(biu);
+							clearInterval(time);
+						}
+						if(biu.offsetTop - pla.offsetTop<=biu.offsetHeight/2+pla.offsetHeight/2 && Math.abs(biu.offsetLeft - pla.offsetLeft)<=biu.offsetWidth/2 + pla.offsetWidth/2){
+								// 当发生撞击时，self被移除
+								biu.style.background = 'red'
+								// console.log(1)
+								// one.removeChild(biu)
+								// one.removeChild(pla)
+							}
+				},1)
+				// clearInterval(timebiu)
+			},500)
+			// 设置键盘弹起事件
+			window.onkeyup = function(){
+				clearInterval(time)
+			}	 -->

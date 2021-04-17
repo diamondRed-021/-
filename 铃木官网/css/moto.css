@@ -1,0 +1,381 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/* 引入header样式设置 */
+.header {
+	width: 100%;
+	height: 73.6px;
+	position: fixed;
+	z-index: 100;
+}
+
+.asd {
+	width: 100%;
+	height: 73.6px;
+}
+
+li{
+	list-style: none;
+}
+
+ a{
+	 text-decoration: none;
+ }
+ /* 设置轮播图大框架样式*/
+ .ban{
+	 width: 100%;
+	 height: 400px;
+	 background: red;
+	 position: relative;
+	 overflow: hidden;
+ }
+ .ban>.bann{
+	 width: 100%;
+	 height: 100%;
+ }
+ .bann>ul{
+	 width: 300vw;
+	 height: 100%;
+	 position: absolute;
+ }
+ .bann>ul>li{
+	 width: 100vw;
+	 height: 100%;
+	 float: left;
+ }
+ .bann>ul>li>img{
+	 width: 100%;
+	 height:100%;
+ }
+ .ban>.lef{
+	 width: 50px;
+	 height: 50px;
+	 background: url(../img/icon_news_left.png) no-repeat 10px center / 40% , rgba(255,255,255,.5);
+	 position: absolute;
+	 top: 50%;
+	 margin-top: -25px;
+	 left: 100px;
+	 /* z-index: 100; */
+ }
+ .ban>.rig{
+ 	 width: 50px;
+ 	 height: 50px;
+ 	 background: url(../img/icon_news_right.png) no-repeat 10px center / 40% , rgba(255,255,255,.5);
+ 	 position: absolute;
+ 	 top: 50%;
+ 	 margin-top: -25px;
+ 	 right: 100px;
+	 z-index: 100;
+ }
+ .ban>.asd{
+	 width: 390px;
+	     height: 6px;
+	     position: absolute;
+	     left: 50%;
+	     margin-left: -195px;
+	     bottom: 40px;
+ }
+  .ban>.asd>ul{
+	   width: 100%;
+	   height: 100%;
+  }
+  .ban>.asd>ul>li {
+      width: 90px;
+      height: 100%;
+      background: blue;
+      float: left;
+      margin: 0 20px;
+	  }
+	  /* 设置重甲内容部分的外部大框架*/
+.mid{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+/* sport 内容设置外部大框架设置*/
+.mid>.sport{
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-top: 100px;
+}
+.mid>.sport>.a{
+	width: 40px;
+	height: 6px;
+	background: #ED1C24;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+}
+.mid>.sport>h4{
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 46px;
+	color: #252525;
+}
+.yang{
+	width: 100%;
+	height: 850px;
+	margin-top: 50px;
+}
+.yang>ul{
+	width: 100%;
+	height: 100%;
+}
+.yang>ul>li:nth-child(1){
+	margin-right: 40px;
+}
+.yang>ul>li{
+	width: 580px;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.yang>ul>li:nth-child(1)>.imgbg{
+	width: 100%;
+	height: 340px;
+	background: url(../img/sport-bg-650.jpg) no-repeat center /100%;
+	position: relative;
+}
+.yang>ul>li:nth-child(1)>.img650{
+	width: 240px;
+	height: 100px;
+	position: absolute;
+	background: url(../img/650-icon.png) no-repeat center /100%;
+	top: 190px;
+	left: 50px;
+}
+.yang>ul>li:nth-child(1)>.imgbg>.hei{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+}
+.yang>ul>li:nth-child(1)>.car{
+	width: 454px;
+	height: 303px;
+	background: url(../img/moto-vstrom.png) no-repeat center /100%;
+	margin: 0 auto;
+}
+.yang>ul>li:nth-child(2)>.imgbg{
+	width: 100%;
+	height: 340px;
+	background: url(../img/sport-bg-1050.jpg) no-repeat center /100%;
+	position: relative;
+}
+.yang>ul>li:nth-child(2)>.img650{
+	width: 240px;
+	height: 100px;
+	position: absolute;
+	background: url(../img/1050-icon.png) no-repeat center /100%;
+	top: 190px;
+	left: 50px;
+}
+.yang>ul>li:nth-child(2)>.imgbg>.hei{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+}
+.yang>ul>li:nth-child(2)>.car{
+	width: 454px;
+	height: 303px;
+	background: url(../img/moto-dl1050.png) no-repeat center /100%;
+	margin: 0 auto;
+}
+.yang>ul>li>.text{
+	width: 454px;
+	height: 100px;
+	left: 50%;
+	position: absolute;
+	margin-left: -227px;
+}
+.yang>ul>li>.text>span{
+	height: 24px;
+	font-size: 16px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+	line-height: 24px;
+	color: white;
+	padding: 0 10px;
+	font-weight: 800;
+}
+.yang>ul>li>.text>span:nth-child(1){
+	background: blue;
+}
+.yang>ul>li>.text>span:nth-child(2){
+	background: red;
+}
+.yang>ul>li>.text>p{
+	color: #9b9b9b;
+	font-size: 16px;
+	display: block;
+	width: 100%;float: left;
+	margin-top: 5px;
+}
+.yang>ul>li>.text>a{
+	display: block;
+	width: 140px;
+	height: 32px;
+	background: red;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	float: left;
+	line-height: 32px;
+	margin-top: 10px;
+}
+/* 中间部分street外部大框架设置 */
+.mid>.street{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.mid>.street>.b{
+	width: 40px;
+	height: 6px;
+	background: #ED1C24;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+}
+.mid>.street>h4{
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 46px;
+	color: #252525;
+}
+.big{
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+}
+.bigimg{
+	width: 100%;
+	height: 340px;
+	background: url(../img/street-bg.jpg) no-repeat center /100%;
+	position: relative;
+}
+.bigimg>.bigimgh{
+	width: 100%;
+	height: 340px;
+	background: rgba(0,0,0,.5);
+	/* opacity: 0; */
+}
+.bigimg>.comeing{
+	width: 100%;
+	height: 340px;
+	background: url(../img/comingsoon-icon.png) no-repeat  center 80px/90%;
+	position: absolute;
+	top: 0;
+}
+.bigimg>.moto{
+	width: 524px;
+	height: 294px;
+	background: url(../img/street-coming.png) no-repeat  center /100%;
+	position: absolute;
+	top: 200px;
+	right: 50px;
+}
+.big>.text{
+	width: 100%;
+	height: 200px;
+	right: 0;
+	border-bottom: 1px dashed #9d9d9d ;
+
+}
+.big>.text>p{
+	display: block;
+	padding-top: 20px;
+	font-weight: 800;
+	padding-left: 20px;
+}
+.big>.text>span{
+	display: block;
+	padding-top: 10px;
+	color: #6E7077;
+	padding-left: 20px;
+}
+.big>.text>a{
+	display: block;
+	width: 140px;
+	height: 32px;
+	background: red;
+	color: white;
+	text-align: center;
+	line-height: 32px;
+	font-size: 12px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+/* 原厂零部件外部大框架设置 */
+.bujian{
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+.yuan{
+	width: 300px;
+	height: 280px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -140px;
+}
+.yuan>span{
+	display: block;
+	font-size: 24px;
+	padding-bottom: 20px;
+}
+.yuan>p{
+	font-size: 14px;
+	line-height: 25px;
+}
+.yuan>a{
+	display: block;
+	width: 140px;
+	height: 32px;
+	background: red;
+	color: white;
+	text-align: center;
+	line-height: 32px;
+	font-size: 12px;
+	margin-top: 40px;
+}
+.tu{
+	width: 900px;
+	height: 200px;
+	right: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -100px;
+}
+.tu>ul{
+	width: 100%;
+	height: 100%;
+}
+.tu>ul>li{
+	width: 200px;
+	height: 100%;
+	float:left;
+	margin-left: 25px;
+	box-shadow: 0px 0px 5px 0px;
+	border-radius: 5px;
+}
+.tu>ul>li>img{
+	width: 100%;
+	height: 100%;
+}
+/* 底部引入的footer样式设置 */
+.footer{
+	margin-top: 100px;
+	width: 100%;
+	height: 285.8px;
+}

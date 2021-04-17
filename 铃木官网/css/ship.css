@@ -1,0 +1,1557 @@
+*{
+	margin: 0;padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'SuzukiPRORegular',"方正兰亭黑",'SimHei',Arial, "Microsoft YaHei", Sans-Serif;
+    color: #000;
+}
+/* 引入header样式 */
+.header {
+	width: 100%;
+	height: 73.6px;
+	position: fixed;
+	z-index: 100;
+}
+/* 整体框架样式 */
+.box{
+	width: 100%;
+	height: auto;
+}
+.asd {
+	width: 100%;
+	height: 73.6px;
+}
+/* 顶部图片样式 */
+.box>.wom{
+	width: 100%;
+	height: 383.75px;
+	background: url(../img/marine-kv.jpg) no-repeat center /100%;
+}
+/* 中间部分内容大框架样式 */
+.box>.mid{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+/* 四冲程部分框架样式 */
+.box>.mid>.four{
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	position: relative;
+}
+/* 四冲程下文字样式 */
+.box>.mid>.four>.a{
+	width: 40px;
+	height: 6px;
+	background: #ED1C24;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+}
+.box>.mid>.four>h4{
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 46px;
+	color: #252525;
+}
+.box>.mid>.four>h3{
+	display: block;
+	text-align: center;
+	padding: 5px 0 30px 0;
+	font-weight: 800;
+}
+/* 手风琴框架样式 */
+.box>.mid>.four>.edc{
+	width: 100%;
+	height: auto;
+}
+/* 手风琴内容整体框架样式 */
+.box>.mid>.four>.edc>li{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+/* 手风琴中每一个li下内容样式设置 */
+.box>.mid>.four>.edc>li:nth-child(1)>.ele{
+	width: 100%;
+	height: 79px;
+	background: #F4F4F4;
+	border-left: 8px solid #00334C;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.ele>span{
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	font-size: 24px;
+	font-weight: 600;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.ele>span>small{
+	font-size: 14px;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.ele>.fdf{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url(../img/sum.png) no-repeat center /100%;
+	right: 30px;
+	top: 25px;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	display: none;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>p{
+	font-size: 14px;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>.smbox{
+	width: 100%;
+	height: 417.3px;
+	background: gold;
+	position: absolute;
+	bottom: 80px;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>.smbox>.one{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>.smbox>.two{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>.smbox>.three{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>.smbox>.four{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>.smbox>.one>.onee{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df175ap-150ap.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>.smbox>.one>.onee:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>.smbox>.two>.twoo{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df200ap.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>.smbox>.two>.twoo:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>.smbox>.three>.threee{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df300ap-250ap.png)  no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>.smbox>.three>.threee:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>.smbox>.four>.fourr{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df325a.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(1)>.edcy>.smbox>.four>.fourr:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.ele{
+	width: 100%;
+	height: 79px;
+	background: #F4F4F4;
+	border-left: 8px solid #00334C;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.ele>span{
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	font-size: 24px;
+	font-weight: 600;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.ele>span>small{
+	font-size: 14px;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.ele>.fdf{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url(../img/sum.png) no-repeat center /100%;
+	right: 30px;
+	top: 25px;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	display: none;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>p{
+	font-size: 14px;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>.smbox{
+	width: 100%;
+	height: 417.3px;
+	background: gold;
+	position: absolute;
+	bottom: 80px;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>.smbox>.one{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>.smbox>.two{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>.smbox>.three{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>.smbox>.four{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>.smbox>.one>.onee{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df250-225-200.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>.smbox>.one>.onee:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>.smbox>.two>.twoo{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df200a.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>.smbox>.two>.twoo:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>.smbox>.three>.threee{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df175a-150a.png)  no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>.smbox>.three>.threee:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>.smbox>.four>.fourr{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df325a.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(2)>.edcy>.smbox>.four>.fourr:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.ele{
+	width: 100%;
+	height: 79px;
+	background: #F4F4F4;
+	border-left: 8px solid #00334C;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.ele>span{
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	font-size: 24px;
+	font-weight: 600;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.ele>span>small{
+	font-size: 14px;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.ele>.fdf{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url(../img/sum.png) no-repeat center /100%;
+	right: 30px;
+	top: 25px;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	display: none;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>p{
+	font-size: 14px;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>.smbox{
+	width: 100%;
+	height: 417.3px;
+	background: gold;
+	position: absolute;
+	bottom: 80px;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>.smbox>.one{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>.smbox>.two{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>.smbox>.three{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>.smbox>.four{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>.smbox>.one>.onee{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df175ap-150ap.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>.smbox>.one>.onee:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>.smbox>.two>.twoo{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df200ap.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>.smbox>.two>.twoo:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>.smbox>.three>.threee{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df300ap-250ap.png)  no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>.smbox>.three>.threee:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>.smbox>.four>.fourr{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df325a.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(3)>.edcy>.smbox>.four>.fourr:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.ele{
+	width: 100%;
+	height: 79px;
+	background: #F4F4F4;
+	border-left: 8px solid #00334C;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.ele>span{
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	font-size: 24px;
+	font-weight: 600;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.ele>span>small{
+	font-size: 14px;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.ele>.fdf{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url(../img/sum.png) no-repeat center /100%;
+	right: 30px;
+	top: 25px;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	display: none;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>p{
+	font-size: 14px;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>.smbox{
+	width: 100%;
+	height: 417.3px;
+	background: gold;
+	position: absolute;
+	bottom: 80px;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>.smbox>.one{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>.smbox>.two{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>.smbox>.three{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>.smbox>.four{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>.smbox>.one>.onee{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df175ap-150ap.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>.smbox>.one>.onee:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>.smbox>.two>.twoo{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df200ap.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>.smbox>.two>.twoo:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>.smbox>.three>.threee{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df300ap-250ap.png)  no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>.smbox>.three>.threee:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>.smbox>.four>.fourr{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df325a.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(4)>.edcy>.smbox>.four>.fourr:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+
+.box>.mid>.four>.edc>li:nth-child(5)>.ele{
+	width: 100%;
+	height: 79px;
+	background: #F4F4F4;
+	border-left: 8px solid #00334C;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.ele>span{
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	font-size: 24px;
+	font-weight: 600;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.ele>span>small{
+	font-size: 14px;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.ele>.fdf{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url(../img/sum.png) no-repeat center /100%;
+	right: 30px;
+	top: 25px;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	display: none;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>p{
+	font-size: 14px;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>.smbox{
+	width: 100%;
+	height: 417.3px;
+	background: gold;
+	position: absolute;
+	bottom: 80px;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>.smbox>.one{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>.smbox>.two{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>.smbox>.three{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>.smbox>.four{
+	width: 300px;
+	height: 100%;
+	background: #F4F4F4;
+	float: left;
+	position: relative;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>.smbox>.one>.onee{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df175ap-150ap.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>.smbox>.one>.onee:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>.smbox>.two>.twoo{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df200ap.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>.smbox>.two>.twoo:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>.smbox>.three>.threee{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df300ap-250ap.png)  no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>.smbox>.three>.threee:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>.smbox>.four>.fourr{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main-df325a.png) no-repeat center 20px/ 90% ,white;
+	position: absolute;
+}
+.box>.mid>.four>.edc>li:nth-child(5)>.edcy>.smbox>.four>.fourr:hover{
+	opacity: 0;
+	cursor: pointer;
+}
+/* 手风琴下文字样式 */
+.cvg{
+	width: calc(100% - 20px);
+	height: calc(100% - 100px);
+	position: absolute;
+	left: 10px;
+	top: 50px;
+}
+.cvda{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 24px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.cvg>p{
+	text-align: center;
+	display: block;
+	padding: 10px;
+}
+.cvg>.zs{
+	width: 49%;
+	height: 100px;
+	position: relative;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	float: left;
+	
+}
+.cvg>.zs>span{
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.cvg>.zs>.img{
+	width: 80%;
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+}
+.cvg>.zs>.img>img{
+	width: 30px;
+	height: 30px;
+	display: block;
+	float: left;
+}
+.cvg>.ys{
+	width: 49%;
+	height: 100px;
+	position: relative;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	float: left;
+	
+}
+.cvg>.ys>span{
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.cvg>.ys>.img{
+	width: 80%;
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+}
+.cvg>.ys>.img>img{
+	width: 30px;
+	height: 30px;
+	display: block;
+	float: left;
+}
+
+.cvg>.zx{
+	width: 49%;
+	height: 100px;
+	position: relative;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	float: left;
+	
+}
+.cvg>.zx>span{
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.cvg>.zx>.img{
+	width: 80%;
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+}
+.cvg>.zx>.img>img{
+	width: 30px;
+	height: 30px;
+	display: block;
+	float: left;
+}
+
+.cvg>.yx{
+	width: 49%;
+	height: 100px;
+	position: relative;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	float: left;
+	
+}
+.cvg>.yx>span{
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.cvg>.yx>.img{
+	width: 80%;
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+}
+.cvg>.yx>.img>img{
+	width: 30px;
+	height: 30px;
+	display: block;
+	float: left;
+}
+.xia{
+	width: 80%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 24px;
+	position: absolute;
+	bottom: 50px;
+	right: 30px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+.xia~p{
+	display: block;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+}
+.edc>li{
+	margin-top: 20px;
+}
+.edc>li>.ele:hover{
+	cursor: pointer;
+}
+/* 二冲程内容外部框架 */
+.box>.mid>.two{
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	position: relative;
+}
+.box>.mid>.two>.b{
+	width: 40px;
+	height: 6px;
+	background: #ED1C24;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+}
+/* 文字样式设置 */
+.box>.mid>.two>h4{
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 46px;
+	color: #252525;
+}
+.box>.mid>.two>h3{
+	display: block;
+	text-align: center;
+	padding: 5px 0 30px 0;
+	font-weight: 800;
+}
+/* 显示内容样式设置 */
+.dfg{
+	width: 1200px;
+	height: 480px;
+	margin-top: 50px;
+	position: relative;
+}
+.dfg>ul{
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+}
+.dfg>ul>li{
+	width: 480px;
+	height: 100%;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+.dfg>ul>li:nth-child(1){
+	background: url(../img/main-dt40wr-40w-30r-30-15a-15-9_9a-9_9.png) no-repeat center  /90%;
+}
+.dfg>ul>li:nth-child(1)>p{
+	display: block;
+	width: 80%;
+	height: auto;
+	text-align: center;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding: 5px 0;
+	position: absolute;
+	bottom: 30px;
+	left: 48px;
+	
+}
+.dfg>ul>li:nth-child(1)>span{
+	display: block;
+	width: 80%;
+	height: auto;
+	text-align: center;
+	padding: 5px 0;
+	position: absolute;
+	bottom: 0px;
+	left: 48px;
+}
+.dfg>ul>li:nth-child(2){
+	background: url(../img/main-dt40wk-25k-9_9k.png) no-repeat center  /90%;
+}
+.dfg>ul>li:nth-child(2)>p{
+	display: block;
+	width: 80%;
+	height: auto;
+	text-align: center;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding: 5px 0;
+	position: absolute;
+	bottom: 30px;
+	left: 48px;
+	
+}
+.dfg>ul>li:nth-child(2)>span{
+	display: block;
+	width: 80%;
+	height: auto;
+	text-align: center;
+	padding: 5px 0;
+	position: absolute;
+	bottom: 0px;
+	left: 48px;
+}
+/* 历史部分 */
+.box>.mid>.his{
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	position: relative;
+}
+.box>.mid>.his>.c{
+	width: 40px;
+	height: 6px;
+	background: #ED1C24;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+}
+.box>.mid>.his>h4{
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 46px;
+	color: #252525;
+}
+.box>.mid>.his>h3{
+	display: block;
+	text-align: center;
+	padding: 5px 0 30px 0;
+	font-weight: 800;
+}
+.thg{
+	width: 1200px;
+	height: auto;
+	position: relative;
+}
+.tim{
+	width: 100%;
+	height: 70px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+}
+.tim>ul{
+	width: 100%;
+	height: 95%;
+	font-size: 24px;
+}
+/* 事件文字内容样式设置 */
+.tim>ul>li{
+	width: 80px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 70px;
+
+	margin: 0 20px;
+	cursor: pointer;
+}
+.tim>ul>li:hover{
+	border-bottom: 3px solid #D0021B !important; 
+}
+.tim>ul>li:nth-child(1){
+	border-bottom: 3px solid #D0021B;	
+}
+/* 历史显示内容设置 */
+.juha{
+	width: 100%;
+	height: 500px;
+	margin-top: 30px;
+}
+.juha>.img{
+	width: 425px;
+	height: 100%;
+	float: left;
+}
+.juha>.rtg{
+	width: 700px;
+	height: 250px;
+	float: right;
+}
+.juha>.rtg>h1{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #00334C;
+	line-height: 50px;
+	font-size: 24px;
+	font-weight: 800;
+	color: white;
+	text-indent: 1em;
+}
+.juha>.rtg>p{
+	display: block;
+	margin: 20px 0;
+}
+.juha>.rtg>span{
+	font-size: 18px;
+	font-weight: 800;
+}
+.juha>.rtg>span>p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+}
+.juhb{
+	width: 100%;
+	height: 500px;
+	margin-top: 30px;
+	display: none;
+}
+.juhb>.img{
+	width: 425px;
+	height: 100%;
+	float: left;
+}
+.juhb>.rtg{
+	width: 700px;
+	height: 250px;
+	float: right;
+}
+.juhb>.rtg>h1{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #00334C;
+	line-height: 50px;
+	font-size: 24px;
+	font-weight: 800;
+	color: white;
+	text-indent: 1em;
+}
+.juhb>.rtg>p{
+	display: block;
+	margin: 20px 0;
+}
+.juhb>.rtg>span{
+	font-size: 18px;
+	font-weight: 800;
+}
+.juhb>.rtg>span>p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+}
+.juhc{
+	width: 100%;
+	height: 500px;
+	margin-top: 30px;
+	display: none;
+}
+.juhc>.img{
+	width: 425px;
+	height: 100%;
+	float: left;
+}
+.juhc>.rtg{
+	width: 700px;
+	height: 250px;
+	float: right;
+}
+.juhc>.rtg>h1{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #00334C;
+	line-height: 50px;
+	font-size: 24px;
+	font-weight: 800;
+	color: white;
+	text-indent: 1em;
+}
+.juhc>.rtg>p{
+	display: block;
+	margin: 20px 0;
+}
+.juhc>.rtg>span{
+	font-size: 18px;
+	font-weight: 800;
+}
+.juhc>.rtg>span>p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+}
+.juhd{
+	width: 100%;
+	height: 500px;
+	margin-top: 30px;
+	display: none;
+}
+.juhd>.img{
+	width: 425px;
+	height: 100%;
+	float: left;
+}
+.juhd>.rtg{
+	width: 700px;
+	height: 250px;
+	float: right;
+}
+.juhd>.rtg>h1{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #00334C;
+	line-height: 50px;
+	font-size: 24px;
+	font-weight: 800;
+	color: white;
+	text-indent: 1em;
+}
+.juhd>.rtg>p{
+	display: block;
+	margin: 20px 0;
+}
+.juhd>.rtg>span{
+	font-size: 18px;
+	font-weight: 800;
+}
+.juhd>.rtg>span>p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+}
+.juhe{
+	width: 100%;
+	height: 500px;
+	margin-top: 30px;
+	display: none;
+}
+.juhe>.img{
+	width: 425px;
+	height: 100%;
+	float: left;
+}
+.juhe>.rtg{
+	width: 700px;
+	height: 250px;
+	float: right;
+}
+.juhe>.rtg>h1{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #00334C;
+	line-height: 50px;
+	font-size: 24px;
+	font-weight: 800;
+	color: white;
+	text-indent: 1em;
+}
+.juhe>.rtg>p{
+	display: block;
+	margin: 20px 0;
+}
+.juhe>.rtg>span{
+	font-size: 18px;
+	font-weight: 800;
+}
+.juhe>.rtg>span>p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+}
+.juhf{
+	width: 100%;
+	height: 500px;
+	margin-top: 30px;
+	display: none;
+}
+.juhf>.img{
+	width: 425px;
+	height: 100%;
+	float: left;
+}
+.juhf>.rtg{
+	width: 700px;
+	height: 250px;
+	float: right;
+}
+.juhf>.rtg>h1{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #00334C;
+	line-height: 50px;
+	font-size: 24px;
+	font-weight: 800;
+	color: white;
+	text-indent: 1em;
+}
+.juhf>.rtg>p{
+	display: block;
+	margin: 20px 0;
+}
+.juhf>.rtg>span{
+	font-size: 18px;
+	font-weight: 800;
+}
+.juhf>.rtg>span>p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+}
+.juhg{
+	width: 100%;
+	height: 500px;
+	margin-top: 30px;
+	display: none;
+}
+.juhg>.img{
+	width: 425px;
+	height: 100%;
+	float: left;
+}
+.juhg>.rtg{
+	width: 700px;
+	height: 250px;
+	float: right;
+}
+.juhg>.rtg>h1{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #00334C;
+	line-height: 50px;
+	font-size: 24px;
+	font-weight: 800;
+	color: white;
+	text-indent: 1em;
+}
+.juhg>.rtg>p{
+	display: block;
+	margin: 20px 0;
+}
+.juhg>.rtg>span{
+	font-size: 18px;
+	font-weight: 800;
+}
+.juhg>.rtg>span>p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+}
+.juhh{
+	width: 100%;
+	height: 500px;
+	margin-top: 30px;
+	display: none;
+}
+.juhh>.img{
+	width: 425px;
+	height: 100%;
+	float: left;
+}
+.juhh>.rtg{
+	width: 700px;
+	height: 250px;
+	float: right;
+}
+.juhh>.rtg>h1{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #00334C;
+	line-height: 50px;
+	font-size: 24px;
+	font-weight: 800;
+	color: white;
+	text-indent: 1em;
+}
+.juhh>.rtg>p{
+	display: block;
+	margin: 20px 0;
+}
+.juhh>.rtg>span{
+	font-size: 18px;
+	font-weight: 800;
+}
+.juhh>.rtg>span>p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+}
+.juhi{
+	width: 100%;
+	height: 500px;
+	margin-top: 30px;
+	display: none;
+}
+.juhi>.img{
+	width: 425px;
+	height: 100%;
+	float: left;
+}
+.juhi>.rtg{
+	width: 700px;
+	height: 250px;
+	float: right;
+}
+.juhi>.rtg>h1{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #00334C;
+	line-height: 50px;
+	font-size: 24px;
+	font-weight: 800;
+	color: white;
+	text-indent: 1em;
+}
+.juhi>.rtg>p{
+	display: block;
+	margin: 20px 0;
+}
+.juhi>.rtg>span{
+	font-size: 18px;
+	font-weight: 800;
+}
+.juhi>.rtg>span>p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+}
+.juhj{
+	width: 100%;
+	height: 300px;
+	margin-top: 30px;
+	display: none;
+	background: url(../img/2020-bg.jpg) no-repeat center /100%;
+	position: relative;
+}
+.juhj>h1{
+	display: block;
+	font-size: 36px;
+	color: #00334C;
+	font-weight: 400;
+	text-align: center;
+	width: 100%;
+	height: 36px;
+	position: absolute;
+	top: 50px;
+}
+.juhj>span{
+	display: block;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+	width: 100%;
+	height: 36px;
+	position: absolute;
+	top: 100px;
+	font-weight: 800;
+}
+.juhj>.pp{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 160px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.box>.mid>.lmkj{
+	width: 100%;
+	height: 350px;
+	margin-top: 100px;
+	position: relative;
+}
+.box>.mid>.lmkj>.d{
+	width: 40px;
+	height: 6px;
+	background: #ED1C24;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+}
+.box>.mid>.lmkj>h4{
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 46px;
+	color: #252525;
+}
+.box>.mid>.lmkj>h3{
+	display: block;
+	text-align: center;
+	padding: 5px 0 30px 0;
+	font-weight: 800;
+}
+.opl{
+	width: 1200px;
+	height: auto;
+	position: relative;
+}
+.opl>.img{
+	width: 600px;
+	height: 237px;
+	float: left;
+}
+.opl>.img>img{
+	width: 100%;
+	height: 100%;
+}
+.opl>.text{
+	width: 550px;
+	height: 237px;
+	float: right;
+	position: relative;
+}
+.opl>.text>p{
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -60px;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 0;
+}
+.box>.mid>.bj{
+	width: 100%;
+	height: 500px;
+	margin-top: 100px;
+	position: relative;
+}
+/* 零部件样式设置 */
+.box>.mid>.bj>.e{
+	width: 40px;
+	height: 6px;
+	background: #ED1C24;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+}
+.box>.mid>.bj>h4{
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 46px;
+	color: #252525;
+}
+.box>.mid>.bj>h3{
+	display: block;
+	text-align: center;
+	padding: 5px 0 30px 0;
+	font-weight: 800;
+}
+.box>.mid>.bj>a{
+	display: block;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 30px;
+	background: #ED1C24;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	color: white;
+}
+.box>.mid>.bj>ul{
+	width: 100%;
+	height: 300px;
+	background: red;
+	position: absolute;
+	bottom: 0;
+}
+.box>.mid>.bj>ul>li{
+	width: 300px;
+	height: 100%;
+	background: #12B7F5;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+.box>.mid>.bj>ul>li>p{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: rgba(255,255,255,.5);
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	bottom: 0;
+	font-size: 18px;
+}
+.box>.mid>.bj>ul>li:nth-child(1){
+	background: url(../img/outboard-1.jpg) no-repeat center /100%;
+}
+.box>.mid>.bj>ul>li:nth-child(2){
+	background: url(../img/outboard-2.jpg) no-repeat center /100%;
+}
+.box>.mid>.bj>ul>li:nth-child(3){
+	background: url(../img/outboard-3.jpg) no-repeat center /100%;
+}
+.box>.mid>.bj>ul>li:nth-child(4){
+	background: url(../img/outboard-4.jpg) no-repeat center /100%;
+}
+.box>.mid>.bj>ul>li>div{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.box>.mid>.bj>ul>li>div>span{
+	display: block;
+	color: white;
+	width: 100px;
+	height: 20px;
+	font-size: 14px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	bottom: 50%;
+	margin-bottom: -10px;
+}
+.box>.mid>.bj>ul>li>div>h3{
+	display: block;
+	color: white;
+	font-size: 12px;
+	position: absolute;
+	top: 50%;
+	margin-top: 18px;
+	left: 50%;
+	margin-left: -35px;
+	font-weight: 400;
+	width: 70px;
+	height: 20px;
+	background: #00334C;
+	text-align: center;
+	line-height: 20px;
+}
+/* 底部footer样式 */
+.footer{
+	margin-top: 100px;
+	width: 100%;
+	height: 285.8px;
+}

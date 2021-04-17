@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../js/jquery.js"></script>
+		<link rel="stylesheet" href="../css/footer.css">
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li>网站地图</li>
+				<li>|</li>
+				<li>人才招聘</li>
+				<li>|</li>
+				<li>经销商查询</li>
+				<li>|</li>
+				<li>法律声明</li>
+				<li>|</li>
+				<li>联系我们</li>
+				<li>|</li>
+				<li>友情链接</li>
+				<li>|</li>
+				<li>经销商加盟</li>
+			</ul>
+			<ul>
+				<li>
+					<img src="../img/suzuki-weichat.png" >
+				</li>
+				<li></li>
+			</ul>
+			<span>铃木（中国）投资有限公司 版权所有</span>
+			<span><a href="">沪ICP备 12032670号 - 2沪公网安备 3101140200159</a></span>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$('.box>ul:eq(1)>li:eq(0)').hover(function(){
+				$('.box>ul:eq(1)>li:eq(0)>img').css('display','block')
+			},
+			function(){
+				$('.box>ul:eq(1)>li:eq(0)>img').css('display','none')
+			})
+		})
+	</script>
+</html>

@@ -1,0 +1,421 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+.bv{
+	width: 100%;
+	height: 73.6px;
+}
+/* 头部样式设置 */
+.header {
+	width: 100%;
+	height: 73.6px;
+	position: fixed;
+	background: white;
+}
+/* 头部内容外大框设置 */
+.box {
+	width: 1152px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+/* 大框内导航栏处设置 */
+.box>ul {
+	width: 738px;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -384px;
+	padding: 0 15px;
+}
+
+img {
+	display: block;
+}
+/* logo样式设置 */
+.logo {
+	width: 192px;
+	height: 37.17px;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+}
+/* 电话样式设置 */
+.tel {
+	width: 160px;
+	right: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+}
+/* 导航类内文字格式设置 */
+.box>ul>li {
+	float: left;
+	height: 100%;
+	padding: 0 20px;
+	font-size: 16px;
+}
+/* 导航栏文字hover效果 */
+.box>ul>li>a:hover{
+		border-bottom:3px solid #D0021B;
+}
+.box>ul>li>a {
+	color: #000000;
+	display: block;
+	height: 60px;
+	line-height: 75px;
+}
+/* 船外机摩托中向下箭头图标样式设置 */
+.box>ul>li:nth-child(2) {
+	background: url(../img/down.png) no-repeat 70px center;
+}
+
+.box>ul>li:nth-child(3) {
+	background: url(../img/down.png) no-repeat 70px center;
+}
+/* 船外机影藏内容设置 */
+.ship {
+	width: 1536px;
+	height: 400px;
+	background: url(../img/sub-menu-bg.jpg) no-repeat center;
+	position: absolute;
+	left: -385px;
+	top: 73.6px;
+	display: none;
+}
+/* 船外机下内容整体布局 */
+.ship>.Mid {
+	width: 1136px;
+	height: 250.81px;
+	margin: 64px auto;
+}
+/* 船外机下左边整体内容布局样式设置 */
+.ship>.Mid>.lef {
+	width: 719.91px;
+	height: 250.81px;
+	float: left;
+	border-bottom: 1px solid silver;
+	border-right: 1px solid silver;
+	position: relative;
+}
+/* 设置船外机下文字内容设置 */
+.ship>.Mid>.lef>.four {
+	display: block;
+	width: 144px;
+	height: 46.8px;
+	line-height: 46.8px;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+	left: 50%;
+	margin-left: -72px;
+	border: 1px solid silver;
+	color: #000000;
+}
+/* 船外机下右边整体内容布局设置 */
+.ship>.Mid>.rig {
+	width: 413.71px;
+	height: 250.81px;
+	float: left;
+	border-bottom: 1px solid silver;
+	border-left: 1px solid silver;
+	position: relative;
+}
+/* 设置船外机下文字内容设置 */
+.ship>.Mid>.rig>.two {
+	display: block;
+	width: 144px;
+	height: 46.8px;
+	line-height: 46.8px;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+	left: 50%;
+	margin-left: -72px;
+	border: 1px solid silver;
+	color: #000000;
+	top: 0px;
+}
+/* 船外机下轮播图整体样式 */
+.ship>.Mid>.lef>.ban {
+	width: 85%;
+	height: 140px;
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+	left: 50%;
+	margin-left: -305px;
+}
+/* 船外机下点击左箭头样式设置 */
+.zuo{
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	bottom: 50%;
+	left: 10px;
+	margin-bottom: -25px;
+	background: url(../img/lef.png) no-repeat center/100%;
+	/* display: none; */
+}
+/* 船外机下点击右箭头样式设置 */
+.you{
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	bottom: 50%;
+	right: 10px;
+	margin-bottom: -25px;
+	background: url(../img/lef.png) no-repeat center /100%;
+	transform:rotate(-180deg);
+}
+/* 船外机下轮播图ul样式 */
+.ship>.Mid>.lef>.ban>ul {
+	width: 1000px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* 轮播图内容样式设置 */
+.ship>.Mid>.lef>.ban>ul>li:nth-child(1){
+	width: 100px;
+	height: 80%;
+	border-right: 1px solid blanchedalmond;
+	float: left;
+	background: url(../img/ou2.png) no-repeat center 0px;
+	text-align: center;
+	padding: 0 1px;
+}
+.ship>.Mid>.lef>.ban>ul>li:nth-child(2){
+	width: 100px;
+	height: 80%;
+	border-right: 1px solid blanchedalmond;
+	float: left;
+	background: url(../img/ou2.png) no-repeat center -100px;
+	text-align: center;
+	padding: 0 1px;
+}
+.ship>.Mid>.lef>.ban>ul>li:nth-child(3){
+	width: 100px;
+	height: 80%;
+	border-right: 1px solid blanchedalmond;
+	float: left;
+	background: url(../img/ou2.png) no-repeat center -200px;
+	text-align: center;
+	padding: 0 1px;
+}
+.ship>.Mid>.lef>.ban>ul>li:nth-child(4){
+	width: 100px;
+	height: 80%;
+	border-right: 1px solid blanchedalmond;
+	float: left;
+	background: url(../img/ou2.png) no-repeat center -300px;
+	text-align: center;
+	padding: 0 1px;
+}
+.ship>.Mid>.lef>.ban>ul>li:nth-child(5){
+	width: 100px;
+	height: 80%;
+	border-right: 1px solid blanchedalmond;
+	float: left;
+	background: url(../img/ou2.png) no-repeat center -400px;
+	text-align: center;
+	padding: 0 1px;
+}
+.ship>.Mid>.lef>.ban>ul>li:nth-child(6){
+	width: 100px;
+	height: 80%;
+	border-right: 1px solid blanchedalmond;
+	float: left;
+	background: url(../img/ou2.png) no-repeat center -500px;
+	text-align: center;
+	padding: 0 1px;
+}
+.ship>.Mid>.lef>.ban>ul>li:nth-child(7){
+	width: 100px;
+	height: 80%;
+	border-right: 1px solid blanchedalmond;
+	float: left;
+	background: url(../img/ou2.png) no-repeat center -599px;
+	text-align: center;
+	padding: 0 1px;
+}
+.ship>.Mid>.lef>.ban>ul>li:nth-child(8){
+	width: 100px;
+	height: 80%;
+	border-right: 1px solid blanchedalmond;
+	float: left;
+	background: url(../img/ou2.png) no-repeat center -695px;
+	text-align: center;
+	padding: 0 1px;
+}
+.ship>.Mid>.lef>.ban>ul>li:nth-child(9){
+	width: 100px;
+	height: 80%;
+	border-right: 1px solid blanchedalmond;
+	float: left;
+	background: url(../img/ou2.png) no-repeat center -795px;
+	text-align: center;
+	padding: 0 1px;
+}
+/* 轮播图内内容设置 */
+.ship>.Mid>.lef>.ban>ul>li>p{
+	display: block;
+	font-size: 12px;
+	margin-top: 120px;
+}
+/* 船外机下右半部分样式设置 */
+.rig>ul{
+	width: 297px;
+	height: 140px;
+	margin-top: 20px;
+	left: 50%;
+	margin-left: -150px;
+	position: absolute;
+}
+.rig>ul>li:nth-child(1){
+	width: 98px;
+	height: 100%;
+	border-right: 1px solid blanchedalmond;
+	float: left;
+	background: url(../img/ou2.png) no-repeat center -895px;
+	text-align: center;
+}
+.rig>ul>li:nth-child(2){
+	width: 98px;
+	height: 80%;
+	border-right: 1px solid blanchedalmond;
+	float: left;
+	background: url(../img/ou2.png) no-repeat center -395px;
+	text-align: center;
+}
+.rig>ul>li:nth-child(3){
+	width: 98px;
+	height: 80%;
+	border-right: 1px solid blanchedalmond;
+	float: left;
+	background: url(../img/ou2.png) no-repeat center 0px;
+	text-align: center;
+}
+.rig>ul>li>p{
+	display: block;
+	font-size: 12px;
+	margin-top: 120px;
+}
+.Mid>a:last-child{
+	color: #000000;
+	position: absolute;
+	right: 0;
+	bottom: 30px;
+	right: 200px;
+}
+/* 导航栏处摩托车隐藏样式设置 */
+.car{
+	width: 1536px;
+	height: 400px;
+	background: url(../img/sub-menu-bg.jpg) no-repeat center;
+	position: absolute;
+	left: -385px;
+	top: 73.6px;
+	display: none;
+}
+.car>.Mid{
+	width: 1136px;
+	height: 250.81px;
+	margin: 64px auto;
+}
+/* 摩托车样式下左边内容布局设置 */
+.car>.Mid>.lef {
+	width: 719.91px;
+	height: 250.81px;
+	float: left;
+	border-bottom: 1px solid silver;
+	border-right: 1px solid silver;
+	position: relative;
+}
+/* 摩托车样式下右边内容布局设置 */
+.car>.Mid>.rig {
+	width: 413.71px;
+	height: 250.81px;
+	float: left;
+	border-bottom: 1px solid silver;
+	border-left: 1px solid silver;
+	position: relative;
+}
+/* 摩托车下具体内容设置 */
+.car>.Mid>.lef>.four {
+	display: block;
+	width: 300px;
+	height: 46.8px;
+	line-height: 46.8px;
+	text-align: center;
+	border-radius: 30px;
+	position: relative;
+	left: 50%;
+	margin-left: -150px;
+	border: 1px solid silver;
+	color: #000000;
+}
+.car>.Mid>.rig>.two {
+	display: block;
+	width: 144px;
+	height: 46.8px;
+	line-height: 46.8px;
+	text-align: center;
+	border-radius: 30px;
+	position: relative;
+	left: 50%;
+	margin-left: -72px;
+	border: 1px solid silver;
+	color: #000000;
+	top: 0px;
+}
+.car>.Mid>.lef>ul{
+	width: 500px;
+	height: 150px;
+	position: absolute;
+	left: 50%;
+	margin-left: -250px;
+	margin-top: 20px;
+}
+/* 摩托车中图片内容设置 */
+.car>.Mid>.lef>ul>li:nth-child(1){
+	background: url(../img/mo-650.png) no-repeat center / 100%;margin-right: 100px;
+}
+.car>.Mid>.lef>ul>li:nth-child(2){
+	background: url(../img/mo-1050.png) no-repeat center / 100%;
+}
+.car>.Mid>.lef>ul>li{
+	width: 200px;
+	height: 100%;
+	float: left;
+	font-size: 12px;
+}
+.car>.Mid>.lef>ul>li>p{
+	margin-top: 150px;
+}
+.car>.Mid>.rig>img{
+	position: absolute;
+	left: 50%;
+	margin-left: -96px;
+	top: 85px;
+}
+.car>.Mid>.rig>span{
+	display: block;
+	text-align: center;
+	bottom: 10px;
+	position: absolute;
+	left: 50%;
+	margin-left: -45px;
+	font-size: 12px;
+	color: #B7BABA;
+}

@@ -1,0 +1,216 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+li:hover {
+	cursor: pointer;
+}
+
+@font-face {
+	font-family: 'iconfont';
+	/* project id 2349922 */
+	src: url('//at.alicdn.com/t/font_2349922_xyp2p8no89.eot');
+	src: url('//at.alicdn.com/t/font_2349922_xyp2p8no89.eot?#iefix') format('embedded-opentype'),
+		url('//at.alicdn.com/t/font_2349922_xyp2p8no89.woff2') format('woff2'),
+		url('//at.alicdn.com/t/font_2349922_xyp2p8no89.woff') format('woff'),
+		url('//at.alicdn.com/t/font_2349922_xyp2p8no89.ttf') format('truetype'),
+		url('//at.alicdn.com/t/font_2349922_xyp2p8no89.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+	color: #333;
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+}
+
+.footer {
+	width: 100%;
+	height: 722px;
+}
+
+.main {
+	width: 100%;
+	height: 800px;
+	background: #f8f8f8;
+}
+
+.main>.box {
+	width: 1100px;
+	margin: 0 auto;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.main>.box>.self {
+	width: 200px;
+	height: 700px;
+	background: white;
+	border-radius: 5px;
+	margin-top: 50px;
+	position: relative;
+	overflow: hidden;
+}
+
+.main>.box>.self>span {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin-top: 100px;
+	margin-left: 50%;
+	position: absolute;
+	left: -25px;
+}
+
+.main>.box>.self>span>img {
+	width: 100%;
+}
+
+.main>.box>.self>p {
+	margin-top: 180px;
+	text-align: center;
+}
+
+.main>.box>.self>ul {
+	width: 70%;
+	float: right;
+	height: 300px;
+	margin-top: 50px;
+}
+
+.main>.box>.self>ul>li {
+	float: right;
+	width: 100%;
+	margin: 10px 0;
+	font-size: 14px;
+	color: #333;
+	background: white;
+	padding: 15px 10px;
+	border-radius: 10px 0 0 10px;
+	text-indent: 1em;
+}
+
+.main>.box>.self>ul>li:hover {
+	background: #333;
+	color: white;
+}
+
+.main>.box>.self>ul>li:hover>span {
+	color: white;
+}
+
+.main>.box>.area {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top: 200px;
+	left: 400px;
+}
+
+.main>.box>.area>h1 {
+	text-align: center;
+	font-weight: 400;
+	margin-bottom: 80px;
+}
+
+.main>.box>.area>span {
+	font-size: 10px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	display: block;
+	color: #999;
+}
+
+.main>.box>.area>p {
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	display: block;
+	border-bottom: 1px solid #999;
+	padding-bottom: 10px;
+}
+
+.main>.box>.car {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top: 200px;
+	left: 400px;
+	display: none;
+}
+
+.main>.box>.car>.yue {
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid #999;
+}
+
+.main>.box>.car>.yue>div {
+	width: 100%;
+	height: 50px;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+.main>.box>.car>.yue>div>span {
+	display: block;
+	height: 100%;
+	line-height: 50px;
+}
+
+.main>.box>.car>.yue>div>span:nth-child(1) {
+	float: left;
+}
+
+.main>.box>.car>.yue>div>span:nth-child(2) {
+	float: right;
+}
+
+.main>.box>.car>.yue>.er>span:nth-child(2) {
+	width: 100px;
+	padding: 0 5px;
+	text-align: center;
+	transition: all .5s;
+	border-radius: 5px;
+}
+
+.main>.box>.car>.yue>.er>span:nth-child(2):hover {
+	background: #E60012;
+	cursor: pointer;
+}
+
+.main>.box>.car>h1 {
+	text-align: center;
+	margin-top: 200px;
+	display: none;
+}
+
+.main>.box>.car>button {
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	right: 0;
+	bottom: 150px;
+	background: #e13a47;
+	outline: none;
+	border: none;
+	color: white;
+}
+
+.main>.box>.car>button:hover {
+	cursor: pointer;
+}

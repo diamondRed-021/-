@@ -1,0 +1,708 @@
+*{
+	margin: 0;padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/* 引入头部内容的样式 */
+.header {
+	width: 100%;
+	height: 73.6px;
+	position: fixed;
+	z-index: 100;
+}
+.asd {
+	width: 100%;
+	height: 73.6px;
+}
+/* 整体内容布局 */
+.box{
+	width: 100%;
+	height: auto;
+}
+/* 顶部图片样式 */
+.pc{
+	width: 100%;
+	height: 122.64px;
+	background: url(../img/100th_banner.jpg) no-repeat center/100%;
+}
+/* 顶部轮播图框架样式 */
+.ban{
+	width: 100%;
+	height: 473px;
+	background: red;
+	margin-top: 5px;
+	position: relative;
+}
+/* 顶部轮播图外部样式 */
+.Ban{
+	width: 300vw;
+	height: 100%;
+	position: relative;
+}
+body{
+	overflow-x: hidden;
+}
+.Ban>ul{
+	width: 100%;
+	height: 100%;
+	background:green;
+	position: absolute;
+}
+.Ban>ul>li{
+	width: 100vw;
+	height: 100%;
+	background: #0000FF;
+	float: left;
+}
+.Ban>ul>li>img{
+	width: 100%;
+	height: 100%;
+}
+/* 轮播图点击按钮 */
+.box>.ban>.lef{
+	width: 50px;
+	height: 50px;
+	background: url(../img/icon_news_left.png) no-repeat 10px center / 40% , rgba(255,255,255,.5);
+	margin-top: -25px;
+	top: 50%;
+	position: absolute;
+	left: 50px;
+}
+.box>.ban>.rig{
+	width: 50px;
+	height: 50px;
+	background: url(../img/icon_news_right.png) no-repeat 10px center / 40% , rgba(255,255,255,.5);
+	margin-top: -25px;
+	top: 50%;
+	position: absolute;
+	right: 50px;
+}
+/* 轮播图底部长条样式 */
+.ban>.sdf{
+	width: 390px;
+	height: 6px;
+	position: absolute;
+	left: 50%;
+	margin-left: -195px;
+	bottom: 60px;
+}
+.ban>.sdf>ul{
+	width: 100%;
+	height: 100%;
+}
+.ban>.sdf>ul>li{
+	width: 90px;
+	height: 100%;
+	background: blue;
+	float: left;
+	margin: 0 20px;
+}
+.ban>.sdf>ul>li:nth-child(1){
+	background: white;
+}
+/* 船外机样式 */
+.OUTBOARDS{
+	width: 100%;
+	height: 834.4px;
+	background: url(../img/home-marine-bg.jpg) no-repeat 0px 0px / 100% ;
+	position: relative;
+}
+.OUTBOARDS>.inner{
+	width: 1087.94px;
+	height: 684.4px;
+	position: absolute;
+	left: 50%;
+	margin-left: -545px;
+	top: 80px;
+}
+/* 船外机文字样式 */
+.OUTBOARDS>.inner>h2{
+	font-size: 48px;
+	text-align: center;
+	font-weight: 500;
+	padding-bottom: 25px;
+	color: white;
+}
+.OUTBOARDS>.inner>h3{
+	font-size: 24px;
+	text-align: center;
+	font-weight: 500;
+	padding-bottom: 25px;
+	color: white;
+}
+/* 船外机下图片样式布局 */
+.OUTBOARDS>.inner>ul{
+	width: 100%;
+	height: 542.4px;
+	background: #00334C;
+}
+.OUTBOARDS>.inner>ul>li{
+	width: 50%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.OUTBOARDS>.inner>ul>li:nth-child(1){
+	background: url(../img/marine_4.jpg) no-repeat center / 100%;
+}
+.OUTBOARDS>.inner>ul>li:nth-child(2){
+	background: url(../img/marine_2.jpg) no-repeat center / 100%;
+}
+/* 图片内文字内容 */
+.OUTBOARDS>.inner>ul>li>p{
+	width: 438.55px;
+	height: 70px;
+	background: red;
+	display: block;
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	text-align: center;
+	line-height: 70px;
+	color: white;
+	font-size: 36px;
+	background: rgba(13,60,93,.5);
+	border: 2px solid rgba(255,255,255,.3);
+	margin-left: -220px;
+}
+.OUTBOARDS>.inner>ul>li>div{
+	width: 100%;
+	height: 100%;
+	background: red;
+	background: rgba(13,60,93,.3);
+	display: none;
+}
+/* 摩托车样式 */
+.MOTORCYCLE{
+	width: 100%;
+	height: 836.4px;
+	background: url(../img/motor-back.jpg) no-repeat 0px 0px / 100% ;
+	position: relative;
+}
+/* 摩托车下布局设置 */
+.MOTORCYCLE>.inner{
+	width: 1087.94px;
+	height: 684.4px;
+	position: absolute;
+	left: 50%;
+	margin-left: -545px;
+	top: 80px;
+}
+/* 摩托车下文字样式设置 */
+.MOTORCYCLE>.inner>h2{
+	font-size: 48px;
+	text-align: center;
+	font-weight: 500;
+	padding-bottom: 25px;
+	color: white;
+}
+.MOTORCYCLE>.inner>h3{
+	font-size: 24px;
+	text-align: center;
+	font-weight: 500;
+	padding-bottom: 25px;
+	color: white;
+}
+.MOTORCYCLE>.inner>ul{
+	width: 100%;
+	height: 542.4px;
+	background: #00334C;
+}
+.MOTORCYCLE>.inner>ul>li{
+	width: 50%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+/* 摩托车背景图片设置 */
+.MOTORCYCLE>.inner>ul>li:nth-child(1){
+	background: url(../img/motor.jpg) no-repeat center / 100%;
+}
+.MOTORCYCLE>.inner>ul>li:nth-child(2){
+	background: url(../img/motor-video.jpg) no-repeat center / 100%;
+}
+.MOTORCYCLE>.inner>ul>li>p{
+	width: 438.55px;
+	height: 70px;
+	background: red;
+	display: block;
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	text-align: center;
+	line-height: 70px;
+	color: white;
+	font-size: 36px;
+	background: rgba(13,60,93,.5);
+	border: 2px solid rgba(255,255,255,.3);
+	margin-left: -220px;
+}
+.MOTORCYCLE>.inner>ul>li>div{
+	width: 100%;
+	height: 100%;
+	background: red;
+	background: rgba(13,60,93,.3);
+	/* display: none; */
+}
+.MOTORCYCLE>.inner>ul>li:nth-child(2)>div{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+}
+.MOTORCYCLE>.inner>ul>li:nth-child(2)>img{
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -32px;
+	left: 50%;
+	margin-left: -32px;
+	width: 80px;
+}
+/* 新闻部分框架设置 */
+.new{
+	width: 100%;
+	height: 900px;
+	position: relative;
+}
+/* 新闻部分内容框架设置 */
+.new>.inner{
+	width: 1087.94px;
+	height: 100%;
+	background: white;
+	position: absolute;
+	left: 50%;
+	margin-left: -545px;
+	top: 50px;
+}
+/* 文字设置 */
+.new>.inner>h1{
+	text-align: center;
+	font-size: 48px;
+	padding-bottom: 25px;
+	font-family: 'SuzukiPRORegular',"方正兰亭黑",'SimHei',Arial, "Microsoft YaHei", Sans-Serif;
+	font-weight: 400;
+	line-height: 58px;
+}
+.new>.inner>h2{
+	text-align: center;
+	font-size: 24px;
+	padding-bottom: 25px;
+	font-family: 'SuzukiPRORegular',"方正兰亭黑",'SimHei',Arial, "Microsoft YaHei", Sans-Serif;
+	font-weight: 400;
+	line-height: 10px;
+}
+.new>.inner>.act{
+	width: 100%;
+	height: 150px;
+}
+.new>.inner>.act>.acta{
+	width: 457.9px;
+	height: 54px;
+	margin: 0 auto;
+}
+.new>.inner>.act>.acta>span{
+	display: block;
+	width: 168.95px;
+	height: 54px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 54px;
+	float: left;
+	margin: 0px 30px ;
+}
+.new>.inner>.act>.acta>span:nth-child(1){
+	display: block;
+	width: 168.95px;
+	height: 54px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 54px;
+	background: #C3D5E3;
+	float: left;
+	margin: 0px 30px ;
+	color: white;
+}
+.new>.inner>.act>.acta>span:nth-child(2){
+	display: block;
+	width: 168.95px;
+	height: 54px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 54px;
+	float: left;
+	margin: 0px 30px ;
+}
+/* 新闻处滑块内容设框架设置 */
+.new>.inner>.bann{
+	width: 100%;
+	height: 460px;
+	overflow-x: auto;
+	position: relative;
+	/* display: none; */
+}
+/* 新闻活动 */
+.new>.inner>.bann>.lkl>ul{
+	width: 2199.9px;
+	height: 360px;
+	position: absolute;
+
+}
+/* 滑块内内容框架设置 */
+.new>.inner>.bann>.lkl>ul>li{
+	width: 346.66px;
+	height: 100%;
+	margin-right: 23.995px;
+	float: left;
+	position: relative;
+}
+.new>.inner>.bann>.lkl>ul>li:last-child{
+	margin-right: 0;
+}
+.new>.inner>.bann>.opo>ul{
+	width: 2199.9px;
+	height: 360px;
+	position: absolute;
+
+}
+/* 赛事活动 */
+.new>.inner>.bann>.opo>ul>li{
+	width: 346.66px;
+	height: 100%;
+	margin-right: 23.995px;
+	float: left;
+	position: relative;
+}
+.new>.inner>.bann>.opo>ul>li:last-child{
+	margin-right: 0;
+}
+.lkl{
+	/* display: none; */
+}
+.opo{
+	display: none;
+}
+/* 左右点击按钮设置 */
+.new>.inner>.lef{
+	width: 27px;
+	height: 44px;
+	background: url(../img/icon_news_left.png) no-repeat center / 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -22px;
+	left: -54px;
+}
+.new>.inner>.rig{
+	width: 27px;
+	height: 44px;
+	background: url(../img/icon_news_right.png) no-repeat center / 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -22px;
+	right: -54px;
+}
+/* 显示内容的文字布局设置 */
+.lkl>ul>li>div{
+	width: 246.6px;
+	height: auto;
+	margin: 0 auto;
+}
+.lkl>ul>li>div>span{
+	display: block;
+	width: 246.6px;
+}
+.lkl>ul>li>div>span>p:first-child{
+	display: block;
+	float: left;
+	color: #6e7077;
+}
+.lkl>ul>li>div>span>p:last-child{
+	display: block;
+	float: right;
+	color: #6e7077;
+}
+.lkl>ul>li>div>span:nth-child(1){
+	display: block;
+	padding: 30px 0 ;
+	
+}
+.lkl>ul>li>div>span:nth-child(2){
+	top: 40px;
+	font-size: 18px;
+	padding: 30px 0;
+	display: block;
+}
+.lkl>ul>li>div>span:nth-child(3){
+	top: 100px;
+	font-size: 14px;
+	color: #6e7077;
+	display: block;
+}
+
+
+.opo>ul>li>div{
+	width: 246.6px;
+	height: auto;
+	margin: 0 auto;
+}
+.opo>ul>li>div>span{
+	display: block;
+	width: 246.6px;
+}
+.opo>ul>li>div>span>p:first-child{
+	display: block;
+	float: left;
+	color: #6e7077;
+}
+.opo>ul>li>div>span>p:last-child{
+	display: block;
+	float: right;
+	color: #6e7077;
+}
+.opo>ul>li>div>span:nth-child(1){
+	display: block;
+	padding: 30px 0 ;
+	
+}
+.opo>ul>li>div>span:nth-child(2){
+	top: 40px;
+	font-size: 18px;
+	padding: 30px 0;
+	display: block;
+}
+.opo>ul>li>div>span:nth-child(3){
+	top: 100px;
+	font-size: 14px;
+	color: #6e7077;
+	display: block;
+}
+/* 新闻中，每一个li内容的hover样式 */
+.new>.inner>.bann>.lkl>ul>li:nth-child(1):hover{
+	background:url(../img/86.jpg) no-repeat -200px -40px /200% ;
+}
+.new>.inner>.bann>.lkl>ul>li:nth-child(2):hover{
+	background:url(../img/86.jpg) no-repeat -150px -40px /200%;
+}
+.new>.inner>.bann>.lkl>ul>li:nth-child(3):hover{
+	background:url(../img/84.jpg) no-repeat -200px -40px /200%;
+}
+.new>.inner>.bann>.lkl>ul>li:nth-child(4):hover{
+	background:url(../img/69.jpg) no-repeat -200px -40px /200%;
+}
+.new>.inner>.bann>.lkl>ul>li:nth-child(5):hover{
+	background:url(../img/69.jpg) no-repeat -250px -40px /200%;
+}
+.new>.inner>.bann>.lkl>ul>li:nth-child(6):hover{
+	background:url(../img/71.jpg) no-repeat -200px -40px /200%;
+}
+.new>.inner>.bann>.opo>ul>li:nth-child(1):hover{
+	background:url(../img/40.jpg) no-repeat -170px -20px /175%;
+}
+.new>.inner>.bann>.opo>ul>li:nth-child(2):hover{
+	background:url(../img/41.jpg) no-repeat -170px -20px /175%;
+}
+.new>.inner>.bann>.opo>ul>li:nth-child(3):hover{
+	background:url(../img/42.jpg) no-repeat -140px -20px /180%;
+}
+.new>.inner>.bann>.opo>ul>li:nth-child(4):hover{
+	background:url(../img/43.jpg) no-repeat -140px -5px /180%;
+}
+.new>.inner>.bann>.opo>ul>li:nth-child(5):hover{
+	background:url(../img/44.jpg) no-repeat -140px -5px /180%;
+}
+.new>.inner>.bann>.opo>ul>li:nth-child(6):hover{
+	background:url(../img/45.jpg) no-repeat -140px -5px /180%;
+}
+/* 滑块样式设置 */
+.new>.inner>.bann::-webkit-scrollbar{
+    width: 12px;
+    background-color: #F5F5F5;
+	height: 5px;
+}
+.new>.inner>.bann::-webkit-scrollbar-thumb{
+	background: blue;
+	border-radius: 10px;
+}
+.new>.inner>.bann::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.lkl>ul>li>.back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.lkl>ul>li>.back:hover{
+	display: block;
+}
+.opo>ul>li>.back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.opo>ul>li>.back:hover{
+	display: block;
+}
+.als{
+	position: absolute;
+	left: 14%;
+}
+.more{
+	width: 248px;
+	height: 54px;
+	background: #00334C;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -124px;
+	text-align: center;
+	line-height: 54px;
+	color: white;
+	font-size: 24px;
+}
+/* 底部视屏轮播图大框样式设置 */
+.vid{
+	width: 100%;
+	height: 650px;
+	position: relative;
+}
+.vid>span{
+	display: block;
+	font-size: 48px;
+	text-align: center;
+	line-height: 150px;
+}
+.vid>p{
+	text-align: center;
+	font-size: 24px;
+}
+/* 轮播样式设置 */
+.vban{
+	width: 1087.94px;
+	height: 268px;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -545px;
+	overflow: hidden;
+}
+.vban>ul{
+	width: 2172px;
+	height: 228px;
+	margin-left: 10px;
+	position: absolute;
+}
+.vban>ul>li{
+	width: 342px;
+	height: 100%;
+	margin-right: 20px;
+	float: left;
+}
+/* 轮播左右点击按钮设置 */
+.vban>.lef{
+	width: 35px;
+	height: 45px;
+	background: url(../img/icon_news_left.png) no-repeat center /60%,rgba(255,255,255,.3);
+	position: absolute;
+	left: 317px;
+	top: 91px;
+}
+.vban>.rig{
+	width: 35px;
+	height: 45px;
+	background: url(../img/icon_news_right.png) no-repeat center /60%,rgba(255,255,255,.3);
+	position: absolute;
+	left: 734px;
+	top: 91px;
+}
+/* 图片设置 */
+.vban>ul>li>img{
+	width: 100%;
+	height: 100%;
+}
+/* 显示隐藏播放按钮设置 */
+.vban>.play{
+	width: 60px;
+	height: 60px;
+	background: url(../img/play.png) no-repeat center;
+	left: 50%;
+	position: absolute;
+	margin-left: -30px;
+	margin-top: -30px;
+	top: 115px;
+}
+/* 左右黑色背景样式设置 */
+.sdd{
+	width: 342px;
+	height: 228px;
+	position: absolute;
+	background: rgb(0,0,0);
+	opacity: .5;
+	left: 10px;
+}
+.sda{
+	width: 342px;
+	height: 228px;
+	position: absolute;
+	background: rgb(0,0,0);
+	opacity: .5;
+	left: 734px;
+}
+/* 底部引入footer样式设置 */
+.footer{
+	width: 100%;
+	height: 285.8px;
+}
+/* 显示的视屏标签的整体设置 */
+.vedio{
+	width: 100%;
+	height: 721px;
+	position: fixed;
+	top: 72px;
+	background: rgba(0,0,0,.8);
+	display: none;
+}
+.vedio>video{
+	width: 1000px;
+	display: block;
+	margin: 30px auto;
+	outline: 0;
+	display: none;
+}
+/* 视屏关闭按钮 */
+.vedio>.close{
+	width: 30px;
+	height: 30px;
+	background: url(../img/close.png) no-repeat center;
+	position: absolute;
+	top: 10px;
+	right: 50px;
+}
+.vedio:hover{
+	cursor: pointer;
+}
+.vedio>.close:hover{
+	cursor: pointer;
+}
+.inner>.act>.acta>span:hover{
+	cursor: pointer;
+}
+.inner>.lef:hover{
+	cursor: pointer;
+}
+.inner>.rig:hover{
+	cursor: pointer;
+}
+.inner>.bann>.lkl>ul>li{
+	cursor: pointer;
+}
+.inner>.bann>.opo>ul>li{
+	cursor: pointer;
+}

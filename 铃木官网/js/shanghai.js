@@ -1,0 +1,24 @@
+$(function(){
+	$('.header').hover(function(){
+		$(this).css('height','473.6px')
+	},function(){
+		$(this).css('height','73.6px')
+	})
+	
+	$('.feifan').hover(function(){
+		console.log(1)
+		$('.feifan>.tu>.hei').animate({
+			opacity:'0',
+		},500)
+		$('.feifan>.area>img').animate({
+			right:-50+'px'
+		},500)
+	},function(){
+		$('.feifan>.tu>.hei').animate({
+			opacity:'1',
+		},500)
+		$('.feifan>.area>img').animate({
+			right:0+'px'
+		},500)
+	})
+})

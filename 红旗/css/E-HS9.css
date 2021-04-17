@@ -1,0 +1,480 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.top {
+	width: 50px;
+	height: 50px;
+	background: red;
+	position: fixed;
+	z-index: 100000000000000000000;
+	right: 50px;
+	bottom: 100px;
+	border-radius: 50%;
+}
+
+.top:hover {
+	cursor: pointer;
+}
+
+.top>p {
+	font-size: 12px;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+}
+
+li {
+	list-style: none;
+}
+
+.bac {
+	width: 100%;
+	position: fixed;
+	background: rgba(0, 0, 0, .5);
+	top: 0;
+	z-index: 1000000000;
+}
+
+#ban {
+	width: 50px;
+	height: 300px;
+	position: fixed;
+	right: 30px;
+	top: 50%;
+	margin-top: -150px;
+	z-index: 1111111;
+}
+
+#ban>ul {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#ban>ul>li {
+	width: 5px;
+	height: 5px;
+	border-radius: 5px;
+	background: white;
+	margin: 20px 0;
+	margin-left: 40px;
+}
+
+#ban>ul>li>span {
+	display: block;
+	position: absolute;
+	width: 70px;
+	left: -50px;
+	height: 20px;
+	line-height: 5px;
+	font-size: 12px;
+	color: #666;
+	display: none;
+	text-align: right;
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	z-index: 1000000000000;
+}
+
+body {
+	overflow: hidden;
+}
+
+.box {
+	width: 100%;
+	height: 2000px;
+	background: red;
+	position: absolute;
+}
+
+.firPage {
+	width: 100%;
+	background: url(../img/index_home_pic.gif) no-repeat center center /100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.firPage>#E-HS9 {
+	font-size: 30px;
+	margin-top: 150px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.firPage>#all {
+	font-size: 15px;
+	color: #666;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.secPage {
+	width: 100%;
+	background: #F8F8F8;
+	overflow: hidden;
+	position: relative;
+}
+
+.secPage>span {
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	font-size: 250px;
+	line-height: 100%;
+	color: white;
+	font-weight: 400;
+	margin-top: 100px;
+}
+
+.secPage>.ban {
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	top: 50px;
+	overflow: hidden;
+}
+
+.secPage>.ban>ul {
+	width: auto;
+	height: 100%;
+	position: absolute;
+	left: -614.4px;
+}
+
+.secPage>.ban>ul>li {
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+.secPage>.ban>ul>li>img {
+	width: 80%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+
+.rig {
+	width: 200px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+}
+
+.rig:hover {
+	cursor: pointer;
+}
+
+.lef {
+	width: 200px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+}
+
+.lef:hover {
+	cursor: pointer;
+}
+
+.secPage>.ban>ul>li>span {
+	font-size: 25px;
+	color: #333333;
+	text-align: center;
+	width: 100%;
+	display: block;
+	margin-top: 50px;
+	font-weight: 600;
+}
+
+.secPage>.ban>ul>li>.tex {
+	width: 70%;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	padding: 0 50px;
+	left: 50%;
+	margin-left: -370px;
+}
+
+.secPage>.ban>ul>li>.tex>#kk {
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+
+.secPage>.ban>ul>li>.tex>#kk>span {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.secPage>.ban>ul>li>.tex>#kk>.rl {
+	font-size: 16px;
+}
+
+.secPage>.ban>ul>li>.tex>#kk>.rlz {
+	font-size: 10px;
+	margin-top: 20px;
+}
+
+.thrPage {
+	width: 100%;
+	background: url(../img/ehs9_3.png) no-repeat center center / 100%;
+	overflow: hidden;
+}
+
+.thrPage>p {
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 200px;
+	transition: all 5s;
+	color: transparent;
+}
+
+.forPage {
+	width: 100%;
+	background: url(../img/ehs9_4.gif) no-repeat center center / 100%;
+	overflow: hidden;
+}
+
+.forPage>p {
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 500px;
+	transition: all 5s;
+	color: transparent;
+}
+
+.fivPage {
+	width: 100%;
+	background: url(../img/ehs9_6_1.png) no-repeat center 140px / 25%, url(../img/ehs9_6_2.png) no-repeat center 150px / 25%, #f8f8f8;
+	overflow: hidden;
+	animation: run 5s linear 3s infinite alternate;
+}
+
+.fivPage>p {
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 100px;
+	transition: all 5s;
+	color: transparent;
+}
+
+.sixPage {
+	width: 100%;
+	background: url(../img/ehs9_7.png) no-repeat center center / 100%;
+	overflow: hidden;
+	animation: run 5s linear 3s infinite alternate;
+}
+
+.sixPage>p {
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 200px;
+	transition: all 5s;
+	color: transparent;
+}
+
+.sevPage {
+	width: 100%;
+	background: url(../img/ehs9_8.png) no-repeat center center / 100%;
+	overflow: hidden;
+	animation: run 5s linear 3s infinite alternate;
+}
+
+.sevPage>p {
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 200px;
+	transition: all 5s;
+	color: transparent;
+}
+
+.eigPage {
+	width: 100%;
+	overflow: hidden;
+	transition: 1s;
+	background: #f8f8f8;
+	position: relative;
+}
+
+.eigPage>span {
+	font-size: 30px;
+	font-weight: 400;
+	margin-top: 50px;
+	display: block;
+	margin-left: 50px;
+}
+
+.eigPage>.cen {
+	width: 300%;
+	height: 450px;
+	top: 150px;
+	position: absolute;
+}
+
+.eigPage>.cen>.pic {
+	height: 100%;
+	overflow: hidden;
+	float: left;
+}
+
+.eigPage>.cen>.pic>img {
+	width: 105%;
+	transition: all 1s ease;
+}
+
+.eigPage>.cen>.pic>img:hover {
+	transform: scale(1.2);
+}
+
+.eigPage>.rig {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: red;
+	bottom: 50px;
+	left: 52%;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+}
+
+.eigPage>.lef {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: red;
+	bottom: 50px;
+	left: 46%;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+}
+
+.tenPage {
+	width: 100%;
+	overflow: hidden;
+	transition: 1s;
+	background: #f8f8f8;
+}
+
+
+li:hover {
+	cursor: pointer;
+}
+
+.tenPage>.footer {
+	width: 100%;
+	background: #333333;
+}
+
+.tenPage>.footer>.area {
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 130px;
+}
+
+.one {
+	width: 100%;
+	height: 20px;
+	border-bottom: 1px solid #8d8d8d;
+	padding-bottom: 10px;
+}
+
+.one>ul {
+	width: auto;
+	height: 100%;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.one>ul>li {
+	float: left;
+	margin-right: 20px;
+	color: #8d8d8d;
+	font-size: 12px;
+	font-weight: 600;
+	transition: 1s;
+}
+
+.one>ul>li:hover {
+	color: white;
+}
+
+.one>ul>span {
+	float: right;
+	display: block;
+	color: #8d8d8d;
+}
+
+.one>ul>img {
+	position: absolute;
+	top: 0;
+	bottom: 50px;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+.two {
+	width: 100%;
+	height: auto;
+	padding: 50px 0 100px 0;
+	border-bottom: 1px solid #8d8d8d;
+}
+
+.two>span {
+	color: white;
+	font-weight: 600;
+}
+
+.two>ul {
+	width: 100%;
+	height: 30px;
+	margin: 30px 0;
+}
+
+.two>ul>li {
+	width: auto;
+	font-size: 16px;
+	color: #FFFFFF;
+	margin-right: 50px;
+	float: left;
+	transition: 1s;
+}
+
+.two>ul>li:hover {
+	color: #901922;
+}
+
+.thr {
+	width: 100%;
+	height: auto;
+}
+
+.thr>h2 {
+	text-align: center;
+	font-size: 12px;
+	color: white;
+	font-weight: 400;
+}

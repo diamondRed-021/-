@@ -1,0 +1,497 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/* header样式 */
+.header {
+	width: 100%;
+	height: 73.6px;
+	position: fixed;
+	z-index: 100;
+}
+
+.asd {
+	width: 100%;
+	height: 73.6px;
+}
+
+li{
+	list-style: none;
+}
+
+ a{
+	 text-decoration: none;
+ }
+ /* 顶部通篇样式*/
+ .tittle{
+	 width: 100%;
+	 height: 380px;
+	 background: url(../img/moto-kv02.jpg) no-repeat center/100%;
+ }
+ /* 中件内容外部边框样式*/
+ .mid{
+	 width: 1200px;
+	 height: auto;
+	 position: relative;
+	 margin: 50px auto;
+ }
+ /* 中间点击切换按钮样式 */
+ .mid>.but{
+	 width: 50%;
+	 margin: 0 auto;
+	 height: 80px;
+ }
+ .mid>.but>p{
+	 display: block;
+	 height: 80%;
+	 float: left;
+	position: relative;
+	text-align: center;
+	color: black;
+	font-size: 24px;
+	line-height: 80px;
+	margin-left: 20px;
+ }
+  .mid>.but>p:nth-child(1){
+	border-bottom: 3px solid #E60012;
+  }
+  .mid>.but>p:nth-child(2){
+  	border-bottom: 0px solid #E60012;
+  }
+  /* 摩托左右两部分样式 */
+.car1{
+	  width:100%;
+	  height: 650px;
+
+}
+.car2{
+	  width:100%;
+	  height: 650px;
+	  display: none;
+}
+.style{
+	width: 100%;
+	height:82px;
+	margin-top: 20px;
+}
+.style>.jiage{
+	width: 300px;
+	height: 100%;
+	float: right;
+}
+.style>.jiage>p{
+	display: block;
+	width: 200px;
+	height: 100%;
+	line-height: 82px;
+	font-size: 18px;
+	float: left;
+}
+.style>.jiage>span{
+	display: block;
+	float: right;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	background: #D0021B;
+	line-height: 40px;
+	margin-top: 21px;
+	color: white;
+}
+.style>.jiage>span:hover{
+	cursor: pointer;
+}
+.style>.smlca{
+	width: 450px;
+	height: 100%;
+	float: left;
+}
+.style>.smlca>ul{
+	width: 450px;
+	height:100%
+}
+.style>.smlca>ul>li{
+	width: 120px;
+	height: 95%;
+	float: left;
+	margin-right: 20px;
+	outline: 1px solid black;
+}
+.style>.smlca>ul>li:hover{
+	cursor: pointer;
+}
+/* 改变摩托的图片样式 */
+.car1>.style>.smlca>ul>li:nth-child(1){
+	background: url(../img/dl1050-y.jpg) no-repeat center /100%;
+}
+.car1>.style>.smlca>ul>li:nth-child(2){
+	background: url(../img/dl1050-r.jpg) no-repeat center /100%;
+}
+.car1>.style>.smlca>ul>li:nth-child(3){
+	background: url(../img/dl1050-b.jpg) no-repeat center /100%;
+}
+.car1>.style>.smlca>ul>li:nth-child(1)>.whi{
+	background: url(../img/dl1050-y.jpg) no-repeat center /100%;
+	filter: contrast(.7);
+	display:none;
+}
+.car1>.style>.smlca>ul>li:nth-child(2)>.whi{
+	background: url(../img/dl1050-r.jpg) no-repeat center /100%;
+	filter: contrast(.7)
+}
+.car1>.style>.smlca>ul>li:nth-child(3)>.whi{
+	background: url(../img/dl1050-b.jpg) no-repeat center /100%;
+	filter: contrast(.7)
+}
+/* 设置改变颜色图片的图片样式 */
+.style>.smlca>ul>li>.whi{
+	width: 100%;
+	height: 100%;
+	outline: 1px solid white;
+}
+.style>.smlca>ul>li>.whi:hover{
+	display: none !important;
+}
+.style>.smlca>ul>li:last-child{
+	margin-right: 0;
+}
+
+.style>.color{
+	width: 155px;
+	height: 22px;
+	float: right;
+	margin-top: 27.5px;
+}
+.style>.color>ul{
+	width: 100%;
+	height:100%
+}
+/* 设置改变颜色的按钮 */
+.style>.color>ul>li{
+	width: 22px;
+	height: 100%;
+	float: right;
+	margin-left: 5px;
+	border: 1px solid black;
+}
+.style>.color>ul>li:hover{
+	cursor: pointer;
+}
+.car1>.style>.color>ul>li:nth-child(1){
+	background: black;
+}
+.car1>.style>.color>ul>li:nth-child(2){
+	background: #CB0B3D;
+}
+.car1>.style>.color>ul>li:nth-child(3){
+	background: #E6D131;
+	margin-left: 0;
+}
+.car2>.style>.color>ul>li:nth-child(1){
+	background: #CB0B3D;
+}
+.car2>.style>.color>ul>li:nth-child(2){
+	background: white;
+}
+.car2>.style>.color>ul>li:nth-child(3){
+	background: #E6D131;
+	margin-left: 0;
+}
+.style>.color>p{
+	float: left;
+	font-size: 14px;
+	line-height: 24px;
+	margin-left: 10px;
+}
+/* 设置放大镜 */
+.small{
+	display: none;
+}
+.moto1{
+	width: 100%;
+	height: 600px;
+	background: url(../img/dl1050-y.jpg) no-repeat center /70%;
+	position: absolute;
+}
+.moto1>.small{
+	width: 300px;
+	height: 200px;
+	background: url(../img/dl1050-y.jpg) no-repeat center /350%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.moto2{
+	width: 100%;
+	height: 600px;
+	background: url(../img/dl1050-r.jpg) no-repeat center /70%;
+	position: absolute;
+	display: none;
+}
+.moto2>.small{
+	width: 300px;
+	height: 200px;
+	background: url(../img/dl1050-r.jpg) no-repeat center /350%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.moto3{
+	width: 100%;
+	height: 600px;
+	background: url(../img/dl1050-b.jpg) no-repeat center /70%;
+	position: absolute;
+	display: none;
+}
+.moto3>.small{
+	width: 300px;
+	height: 200px;
+	background: url(../img/dl1050-b.jpg) no-repeat center /350%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.moto4{
+	width: 100%;
+	height: 600px;
+	background: url(../img/moto-650xt-yu.jpg) no-repeat center /70%;
+	position: absolute;
+}
+
+.moto4>.small{
+	width: 300px;
+	height: 200px;
+	background: url(../img/moto-650xt-yu.jpg) no-repeat center /350%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.moto5{
+	width: 100%;
+	height: 600px;
+	background: url(../img/moto-650xt-white-x.jpg) no-repeat center /70%;
+	position: absolute;
+	display: none;
+}
+.moto5>.small{
+	width: 300px;
+	height: 200px;
+	background: url(../img/moto-650xt-white-x.jpg) no-repeat center /350%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.moto6{
+	width: 100%;
+	height: 600px;
+	background: url(../img/moto-650xt-red-x.jpg) no-repeat center /70%;
+	position: absolute;
+	display: none;
+}
+.moto6>.small{
+	width: 300px;
+	height: 200px;
+	background: url(../img/moto-650xt-red-x.jpg) no-repeat center /350%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* 设置不同摩托颜色的图片 */
+.car2>.style>.smlca>ul>li:nth-child(1){
+	background: url(../img/moto-650xt-yu.jpg) no-repeat center /100%;
+}
+.car2>.style>.smlca>ul>li:nth-child(2){
+	background: url(../img/moto-650xt-white-x.jpg) no-repeat center /100%;
+}
+.car2>.style>.smlca>ul>li:nth-child(3){
+	background: url(../img/moto-650xt-red-x.jpg) no-repeat center /100%;
+}
+.car2>.style>.smlca>ul>li:nth-child(1)>.whi{
+	background: url(../img/moto-650xt-yu.jpg) no-repeat center /100%;
+	filter: contrast(.7);
+	display:none;
+}
+.car2>.style>.smlca>ul>li:nth-child(2)>.whi{
+	background: url(../img/moto-650xt-white-x.jpg) no-repeat center /100%;
+	filter: contrast(.7)
+}
+.car2>.style>.smlca>ul>li:nth-child(3)>.whi{
+	background: url(../img/moto-650xt-red-x.jpg) no-repeat center /100%;
+	filter: contrast(.7)
+}
+.moto1>.big{
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: red;
+	left: -115px;
+	top: -100px;
+	display: none;
+}
+/* 设置试驾页面 */
+.test{
+	width: 100%;
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	z-index: 101;
+}
+.testInner{
+	width: 80%;
+	height: 80%;
+	background: white;
+	position: absolute;
+	top: 50%;
+	margin-top: -258px;
+	left: 50%;
+	margin-left: -600px;
+}
+.testInner>.deta{
+	width: 90%;
+	height: 90%;
+	margin:30px 60px;
+}
+.deta>.lef{
+	width: 45%;
+	height: 100%;
+	float: left;
+}
+.deta>.lef>img{
+	width: 100%;
+	height: 60%;
+}
+.deta>.rig{
+	width: 50%;
+	height: 100%;
+	float: right;
+	position: relative;
+}
+.deta>.lef>ul{
+	width: 490px;
+	height: 84px;
+}
+.deta>.lef>ul>li{
+	width: 150px;
+	height: 100%;
+	float: left;
+	margin: 0 6px;
+}
+.deta>.lef>ul>li>img{
+	width: 100%;
+	height:100%;
+}
+.deta>.rig>span{
+	font-size: 28px;
+	font-weight: lighter;
+	color: #1E1E1E;
+	display: block;
+	width: 68%;
+}
+.deta>.rig>p{
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.deta>.rig>p>span{
+	color: #1c69d4;
+	font-size: 18px;
+}
+.deta>.rig>h3:nth-child(4){
+	font-weight: lighter;
+	font-size: 18px;
+}
+.deta>.rig>.color{
+	width: 80%;
+	float: right;
+	
+}
+.deta>.rig>.color>li:hover{
+	cursor: pointer;
+	
+}
+.deta>.rig>.color>li{
+	height: 34px;
+	float: left;
+	margin: 10px 5px;
+	border-radius: 50px;
+	border: 2px solid #1C69D4;
+	font-size: 16px;
+	text-align: center;
+	line-height: 34px;
+	padding: 0 10px;
+	float: left;
+	background: rgba(200,200,200,.6);
+}
+.deta>.rig>.color>li:hover{
+	transition: all 1s ease;
+	background: #1C69D4;
+	color: white;
+}
+.deta>.rig>h3:nth-child(6){
+	font-weight: lighter;
+	font-size: 18px;
+	margin-top: 130px;
+}
+.deta>.rig>.colorcho{
+	width: 80%;
+	float: right;
+	
+}
+.deta>.rig>.colorcho>li:hover{
+	cursor: pointer;
+}
+.deta>.rig>.colorcho>li{
+	height: 34px;
+	width: 34px;
+	float: left;
+	margin: 10px 5px;
+	border-radius: 50%;
+	float: left;
+}
+.deta>.rig>.colorcho>li:nth-child(1){
+	background: #E6D131;
+}
+.deta>.rig>.colorcho>li:nth-child(2){
+	background: #ED1C24;
+}
+.deta>.rig>.colorcho>li:nth-child(3){
+	background: #1e1e1e;
+}
+.deta>.rig>.colorcho>li:nth-child(4){
+	background: #E0E0E0;
+}
+.deta>.rig>.colorcho>li:nth-child(5){
+	background: #1C69D4;
+}
+.deta>.rig>a:last-child{
+	display: block;
+	width: 150px;
+	height: 50px;
+	background: rgba(200,200,200,.5);
+	bottom: 50px;
+	position: absolute;
+	text-align: center;
+	line-height: 50px;
+	left: 110px;
+	border-radius: 50px;
+	color:black;
+	border: 3px solid  #1C69D4;
+}
+.deta>.rig>a:last-child:hover{
+	transition: all 1s ease;
+	background: #1C69D4;
+	color: white;
+	cursor: pointer;
+}
+.close{
+	width: 30px;
+	height: 30px;
+	background: url(../img/off.png) no-repeat center/100%;
+	position: absolute;
+	right: 0;
+	top: 0px;
+}
+/* 设置底部footer样式 */
+.footer{
+	margin-top: 100px;
+	width: 100%;
+	height: 285.8px;
+}

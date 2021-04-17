@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+a:hover{
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.box {
+	margin: 0;
+	padding: 0;
+}
+
+/* 左边内容布局 */
+.leftarea {
+	width: 30%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+}
+
+.leftarea {
+	width: 30%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+}
+
+.leftarea>.use {
+	margin-top: 50%;
+	padding: 0px 15%;
+	width: 100%;
+	
+
+}
+
+.leftarea>.use>h3 {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.leftarea>.use>button {
+	background: transparent;
+	border: 0;
+	font-size: 16px;
+	margin: 5px 0;
+	color: #707070;
+}
+
+.leftarea>.use>button:hover {
+	color: black;
+}
+
+/* 右边内容布局 */
+.rightarea {
+	width: 70%;
+	float: right;
+	/* background: red; */
+}
+.rightarea>.Car {
+	width: 100%;
+	margin: 0;
+}
+
+.rightarea>.Car>img {
+	width: 100%;
+}
+
+.ban {
+	width: 100%;
+	height: 50px;
+	margin: 0;
+}
+
+.ban>ul {
+	text-align: center;
+	line-height: 50px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.ban>ul>li {
+	padding: 0 10px;
+	font-weight: bold;
+	float: left;
+}
+
+.ban>ul>li:nth-child(1)>img {
+	width: 35px;
+}
+
+.ban>ul>li:nth-child(5) {
+	float: right;
+	margin-right: 20px;
+}
+.area{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.area>h3{
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+.area>h5{
+	font-size: 16px;
+	padding: 0 50px;
+}
+.mainNew{
+	background: #f7f7f7;
+	text-align: center;
+	
+}
+.mainNews>h3{
+	margin: 50px 0 0 0;
+}
+.mainNews>ul{
+	width: 70%;
+	margin: 0 auto;
+}
+.mainNews>ul>li{
+	float: left;
+	margin-top: 50px;
+}
+.mainNews>ul>li>h5{
+	margin-top: 20px;
+	font-size: 16px;
+}
+.mainNews>ul>li>img{
+	width: 100%;
+}
+/* 手机端菜单栏 */
+.msBan {
+	width: 100%;
+	height: 55px;
+	background: white;
+	border-top: 2px solid rgba(247, 247, 247);
+	/* position: fixed; */
+	bottom: 0;
+	display: flex;
+	margin: 0 auto;
+	display: none;
+	position: fixed;
+}
+
+.msBan>div {
+	width: 20%;
+	height: 100%;
+	position: relative;
+
+}
+
+.msBan>div:hover {
+	cursor: pointer;
+}
+
+.msBan>div>img {
+	position: absolute;
+	margin-left: 50%;
+	left: -14px;
+	top: 5px;
+}
+
+.msBan>div>h5 {
+	margin: 0;
+	font-size: 12px;
+	margin-top: 35px;
+	text-align: center;
+}
+
+.msBan>div:nth-child(1)>h5 {
+	color: #00A862;
+}

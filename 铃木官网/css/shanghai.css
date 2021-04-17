@@ -1,0 +1,303 @@
+*{
+	margin: 0;padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.header {
+	width: 100%;
+	height: 73.6px;
+	position: fixed;
+	z-index: 100;
+}
+.asd {
+	width: 100%;
+	height: 73.6px;
+}
+.box{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.box>.tit{
+	width: 100%;
+	height: 383px;
+	background: url(../img/shanghai-kv.jpg) no-repeat center;
+}
+.box>.mid{
+	width: 1200px;
+	height: auto;
+	margin:50px auto;
+}
+.box>.mid>.a{
+	width: 50px;
+	height: 6px;
+	background: #ED1C24;
+	margin: 10px auto;
+}
+.box>.mid>p{
+	text-align: center;
+	font-size: 24px;
+	color: #252525;
+}
+.box>.mid>.feifan{
+	width: 100%;
+	height: 457px;
+	margin: 50px 0;
+}
+.box>.mid>.feifan>.tu{
+	width: 100%;
+	height: 330px;
+	position: relative;
+}
+.box>.mid>.feifan>.tu>img{
+	width: 100%;
+	height: 100%;
+}
+.box>.mid>.feifan>.tu>.hei{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+}
+.box>.mid>.feifan>.tu>h3{
+	font-size: 20px;
+	position: absolute;
+	display: block;
+	top: 40%;
+	left: 50px;
+	color: white;
+}
+.box>.mid>.feifan>.tu>span{
+	font-size: 14px;
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50px;
+	color: white;
+	line-height: 28px;
+}
+.box>.mid>.feifan>.area{
+	width: 1100px;
+	margin-left: 50px;
+	height: 127px;
+	position: absolute;
+}
+.box>.mid>.feifan>.area>span{
+	display: block;
+	height: 24px;
+	width: auto;
+	float: left;
+	padding: 0 10px;
+	transform:skew(-15deg);
+	margin-top: 20px;
+	line-height: 24px;
+	color: white;
+}
+.box>.mid>.feifan>.area>span:nth-child(1){
+	background: #004EA1;
+}
+.box>.mid>.feifan>.area>span:nth-child(2){
+	background:  #ED1C24;
+	margin-left: 10px;
+}
+.box>.mid>.feifan>.area>h4{
+	display: block;
+	width: auto;
+	height: 24px;
+	width: 280px;
+	font-weight: 400;
+	color: #9b9b9b;
+	margin-top: 10px;
+}
+.box>.mid>.feifan>.area>a{
+	display: block;
+	width: 140px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	position: absolute;
+	bottom: 0;
+	background: #ED1C24;
+	color: white;
+	font-size: 12px;
+}
+.box>.mid>.feifan>.area>img{
+	width: 454px;
+	height: 303px;
+	position: absolute;
+	right: 0;
+	top: -170px;
+}
+.box>.mid>.shou{
+	width: 100%;
+	height: 650px;
+	background: black;
+	margin-top: 100px;
+	position: relative;
+}
+.box>.mid>.shou>.mid{
+	width: 90%;
+	height: 90%;
+	margin-left: 60px;
+	margin-top: 32.5px;
+	float: left;
+	
+}
+.box>.mid>.shou>.mid>h1{
+	font-size: 24px;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+}
+.box>.mid>.shou>.mid>span{
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	display: block;
+	width: 100%;
+	margin-top: 30px;
+	color: #9b9b9b;
+}
+.box>.mid>.shou>.mid>ul{
+	width: 100%;
+	height: 335px;
+	margin-top: 50px;
+}
+.box>.mid>.shou>.mid>ul>li{
+	width: 32%;
+	height: 100%;
+	background: blue;
+	float: left;
+	position: relative;
+}
+.box>.mid>.shou>.mid>ul>li:nth-child(1){
+	background: url(../img/shanghai-service-1.jpg) no-repeat center /100%;
+}
+.box>.mid>.shou>.mid>ul>li:nth-child(2){
+	margin: 0 21px;
+	background: url(../img/shanghai-service-2.jpg) no-repeat center /100%;
+}
+.box>.mid>.shou>.mid>ul>li:nth-child(3){
+	background: url(../img/shanghai-service-3.jpg) no-repeat center /100%;
+}
+.box>.mid>.shou>.mid>ul>li>.asd{
+	width: 95%;
+	height: 80%;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.box>.mid>.shou>.mid>ul>li>.asd>p{
+	display: block;
+	border-top: 3px solid #D0021B;
+	font-size: 16px;
+	color: white;
+}
+.box>.mid>.shou>.mid>ul>li>.dsa{
+	width: 100%;
+	position: absolute;
+	height: 80px;
+	background: rgba(0,0,0,.5);
+	bottom: 0;
+}
+.box>.mid>.shou>.mid>ul>li>.dsa>p{
+	display: block;
+	margin-left: 10px;
+	margin-top: 20px;
+	color: white;
+}
+.box>.mid>.shou>.mid>ul>li>.qwe{
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	bottom: -150px;
+}
+.box>.mid>.shou>.mid>ul>li>.qwe>span{
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 24px;
+	color:white;
+	float: left;
+	margin-top: 30px;
+}
+.box>.mid>.shou>.mid>ul>li>.qwe>p{
+	display: block;
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-size: 12px;
+	margin-top: 10px;
+	float: left;
+}
+.box>.mid>.shou>.mid>ul>li>.qwe>div{
+	width: 50px;
+	height: 6px;
+	background: red;
+	float: left;
+	margin-left:150px;
+	margin-top: 20px;
+}
+.box>.mid>.cnm{
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+}
+.box>.mid>.cnm>span{
+	text-align: center;
+	display: block;
+	width: 100%;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.box>.mid>.cnm>p{
+	text-align: center;
+	display: block;
+	width: 100%;
+	color: #9D9D9D;
+}
+.box>.mid>.cnm>ul{
+	width: 930px;
+	height: auto;
+	background: red;
+	margin: 20px auto;
+	
+}
+.box>.mid>.cnm>ul>li{
+	width: 210px;
+	height: 200px;
+	float: left;
+	margin: 20px 50px;
+}
+.box>.mid>.cnm>ul>li>h6{
+	display: block;
+	height: 30px;
+	font-size: 20px;
+	border-left: 10px solid #D0021B;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.box>.mid>.cnm>ul>li>h6>img{
+	display: block;
+	margin: 5px 10px;
+	float: left;
+}
+.box>.mid>.cnm>ul>li>p{
+	font-size: 14px;
+}
+.box>.mid>.cnm>ul>li>h5{
+	display: block;
+	height: 30px;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.footer{
+	width: 100%;
+	height: 285.8px;
+}
